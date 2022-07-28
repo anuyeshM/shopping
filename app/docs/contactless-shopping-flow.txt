@@ -1,0 +1,12 @@
++ scan store qr code
+  - product listing
+  - scanner
+    > pull product details
+	  * add to cart
+	  * buy now            ---> mobile-verification
+  - cart
+    > global object : client side
+	> on visit, update prices for products thru api
++ mobile verification
++ payment summary
++ payment gateway
