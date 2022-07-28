@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="68" viewBox="0 0 8 68">
+    <g fill="none" fill-rule="evenodd">
+        <g stroke="#47B896">
+            <g transform="translate(-321 -927) translate(321 927)">
+                <path stroke-dasharray="4 4" stroke-linecap="round" stroke-linejoin="round" d="M4 12L4 56"/>
+                <circle cx="4" cy="4" r="3" fill="#FFF" stroke-width="2"/>
+                <circle cx="4" cy="64" r="3" fill="#FFF" stroke-width="2"/>
+            </g>
+        </g>
+    </g>
+</svg>
