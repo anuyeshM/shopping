@@ -1,0 +1,97 @@
+api/getProductInfo
+
+input
+	shopId
+	productId [ancestor ID || product ID]
+	
+	attributes
+		<type>: <value>
+		color: 'white'
+		size: 'M'
+		
+output
+	productId
+
+category  ----   productDetails --- prodId
+                                      | 
+                     ^________________| if prodId != url-prodId
+
+=======================================================
+
+// objective
+
+on change of attributes on product details page
+	refresh page with new product ID [from attribute selection]
+	
+// possible approach
+
+---------------
+productDetails
+---------------
+_/
+
+#1
+  on add to cart
+	- call api/getProductInfo to obtain variant productId	
+	- call api/item if params.prodId != api.prodId
+	
+	cons: 2 api calls whenever productDetails is opened
+	
+-> new    api/getProductInfo
+-> update api/item to always return productVariants
+
+----
+
+steps to follow
+
+1. come to productDetails
+2. api/getProductInfo with current attribute selection
+3. if api.prodId != url.prodId
+	-> refresh details page
+	-> pDetails.quantity == 0 => disable add to cart
+		-> flag unavailability message
+4. on attribute change,
+	-> goto [2]
+
+? pass storeId param to api/item
+
+---------------
+
+#2
+	api/item 
+	
+	- all combinations for variants in api/item
+	variants: [
+		{
+			productId: 'XXYYTTAA',
+			color: 'white',
+			size: 'M',
+			fit: 'Slim',
+			Collar: 'Chinese'
+		},
+		{
+			productId: 'XXYYTTBB',
+			color: 'white',
+			size: 'L',
+			fit: 'Slim',
+			Collar: 'Chinese'
+		}
+	]
+	viz: {
+		color: 'colorpicker',		
+	}
+	
+	- ds manipulation to extract dropdown options at front-end
+	- on attribute change load details page with productId
+	
+	
+	cons: payload heavy
+	
+	
+	
+	
+	
+	
+	
+	
+	

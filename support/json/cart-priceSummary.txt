@@ -1,0 +1,119 @@
+// POST
+// request
+
+{
+	"promo": "ABCPROMO",
+	"items": [
+	  {
+		"itemId": "A4PJPEpQvJAtGFv8t",
+		"itemLabel": "Linen Lucknavi Slim Shirt",
+		"itemPrice": "5000",
+		"itemQuantity": 1
+	  },
+	  {
+		"itemId": "W4PJPEpQvJAtGFvCD2",
+		"itemLabel": "Cambric Printed Short Kurta",
+		"itemPrice": "5000",
+		"itemQuantity": 1
+	  }
+	]
+}
+
+
+// response
+{
+	currency: 'Rs',
+	productSubtotal: 10000,
+	orderTotal: 8999,
+	promo: {
+		applied: true,
+		codeUsed: 'ABCPROMO'
+		discountAmount: 1000
+	},
+	products: [
+		{
+			itemId: 'A4PJPEpQvJAtGFv8t',
+			itemLabel: 'Linen Lucknavi Slim Shirt',
+			itemQuantity: 1,
+			minQuantity: 1,
+			maxQuantity: 10,
+			itemPrice: 5000,
+			currPrice: 5000,
+			productImageURI: 'http://172.31.145.155:8080/prodImg/P2.png'
+		},
+		{
+			itemId: 'W4PJPEpQvJAtGFvCD2',
+			itemLabel: 'Cambric Printed Short Kurta',
+			itemQuantity: 2,
+			minQuantity: 1,
+			maxQuantity: 5,
+			itemPrice: 5000,
+			currPrice: 4999,
+			productImageURI: 'http://172.31.145.155:8080/prodImg/1.png'
+		}
+	]
+}
+
+// actual response
+{
+  "data": {
+    "promo": {
+      "applied": "true",
+      "codeUsed": "ABCPROMO",
+      "discountAmount": 100
+    },
+    "currency": "Rs",
+    "productSubtotal": 6489,
+    "totalTaxes": 874.8768,
+    "totalDiscountAmt": 239.88,
+    "orderTotal": 6249.12,
+    "products": [
+      {
+        "itemId": "A4PJPEpQvJAtGFv8t",
+        "productName": "Cotton White super short kurta",
+        "price": 1999,
+        "shopId": "CCXow8ALRDrALHYGN",
+        "productImageUrl": [
+          "http://172.31.145.155:8080/prodImg/P2.png"
+        ],
+        "itemLabel": "Cotton White super short kurta",
+        "discountPct": 12,
+        "isTaxable": true,
+        "taxCodeId": "saTNiyd8oDb22aFfP",
+        "prices": {
+          "itemPrice": 1999,
+          "discountAmount": 239.88,
+          "taxes": 246.2768,
+          "currPrice": 1759.12
+        },
+        "itemPrice": 1999,
+        "currPrice": 1759.12
+      },
+      {
+        "itemId": "W4PJPEpQvJAtGFvCD2",
+        "productName": "Cotton Silk Zari Checks Long Kurta",
+        "price": 4490,
+        "shopId": "CCXow8ALRDrALHYGN",
+        "productImageUrl": [
+          "http://172.31.145.155:8080/prodImg/1.png",
+          "http://172.31.145.155:8080/prodImg/2.png"
+        ],
+        "itemLabel": "Cotton Silk Zari Checks Long Kurta",
+        "discountPct": 0,
+        "isTaxable": true,
+        "taxCodeId": "saTNiyd8oDb22aFfP",
+        "prices": {
+          "itemPrice": 4490,
+          "discountAmount": 0,
+          "taxes": 628.6,
+          "currPrice": 4490
+        },
+        "itemPrice": 4490,
+        "currPrice": 4490
+      }
+    ]
+  },
+  "status": "success",
+  "statusCode": 200,
+  "message": "product details"
+}

@@ -1,0 +1,935 @@
+feature enhancements:
+[NA] cache searchstring for browser navigation incase of search/filter use
+[NA] autofill otp
+-    scanner width
+-    always scroll to top on route change
+
+=========================================================================
+
+[20201230]
+
+# partially accommodate priceSummary [non grouped store] & createOrder [groupedStore]
+
+=========================================================================
+
+[20201217]
+
+[store portal]
++ init -> use tracker for store portal
+
+=========================================================================
+
+[202012116]
+
+# cart page ui [show grouped items by store] -- using dummy JSON
+# edge case handling at cart page
+# patch up cart page to be in demoable state without breaking [with dummy cart page]
+
+[campaign app]
+> either/or for email/mobile
+> checkbox for kerb/quad
+> season of smile logo instead of text
+> bial logo position & image
+> campaign deployment for demo
+
+=========================================================================
+
+[20201211/14/15]
+
+# campaign app bootstrap
+# api communication issues
+
+=========================================================================
+
+[20201210]
+
+# store title middle aligned
+# fallback image alignment, position
+# issue fix,address from defect list
+# f&b data
+# details page, details attribute, hide if no details available & auto collapse if none available
+# storelisting fallback image
+
+=========================================================================
+
+[20201209]
+
+# header logo position
+# category page image height control: issue observed in brics&picadro
+# category page no offer price vert.alignment
+# cart item image height control
+# details page solo price vert.alignment
+# prod build deployment on test.contactless*
+
+=========================================================================
+
+[20201208]
+
+todo:
+# try: border around product tiles or tone down background colour
+# correct price from cart to payment page
+# retain cart when payment aborted
+# retain items if user aborts payment like landing/category
+# try bial logo on storelisting - headerComponent
+# cart item; don't show discount price if no discount applied
++ brainstorm around how to implement coupon redemption
+
+jerry:
+# filters not updating on store change
+# new landing text hanging; too much white space
+# subcategory not shown in filters
+# storelisting autosuggestion untidy
+6 applied filters not shown on storelisting
+
+---------
+
+* -> blocker
+? -> high priority
++ -> later [after priority items]
+
+demo feedback
+* new landing text hanging too much white space
++ applied filters not shown on storelisting
++ cart item; don't show discount price if no discount applied
+* try: border around product tiles or tone down background colour
+* try bial logo on storelisting
+? banner action to be defined on backend
+? retain items if user aborts payment like landing/category
+
+test feedback
+* filters not updating on store change
+? subcategory not shown in filters
+? storelisting autosuggestion untidy
+
+
+>>>
+feature: coupon redemption
+on click of apply/checkout ask mob verif and bind coupon code with acc id; don't ask for confirmation again.
+
+=========================================================================
+
+[20201207]
+
+# cartComponent navigation issues from landing & discover more
+# issue fixes DEFCL001, DEFCL010, DEFCL016, DEFCL019, DEFCL022, DEFCL023
+# switch to app prompt on new landing
++ scroll issue on product listing [only mob issue]
+
+=========================================================================
+
+[20201204]
+
+# error fallback page cosmetics and redirection
+# s2a background ui
+# promo enable [dummy on cart summary]
+# error handling on cart events if cart not init
+# paymentRedir page wait breather and cosmetics
+# new landing page integration
+# s2a visualization fix [modal appearance]
+# flow fixes
+
+=========================================================================
+
+[20201203]
+
+# discount info product details
+# discount info product listing
+# remove otp auto submit
+# productDct on /priceSummary api [cart page]
+# productDct on /category api
+# cart page accessible globally
+# header as a component & to be exposed globally
+# cart navigation revamp
+# payment screen navigation
+
+=========================================================================
+
+[20201202]
+
+# cart page to show all selected items irrespective of store
+# back button on header left of storelabel to redirect to storelisting
+# placeholder for discounted price on category and product listing
+# storelisting route and navigation
+# success/fail -> home cart object fix
+
+=========================================================================
+
+[20201201]
+
+# product demo
+# barcode scanning success rate 2/10 : resolved; windows bg theme caused anomaly
+# multistore supporting cartmanager: [pointer: useContext & useReducer for cartManager]
++ store listing generic qr code
++ offer; application of offer; price in ui
+
+valid products:
+
+Fabindia
+- all products
+ Fashion & Accessories
+   Cotton white/black [1,2 item in f&a list on landing page]
+ Clothing
+   Linen Cotton Dobby [1st item in clothing
+
+Fossil
+ Wallets
+   Benedict Front Pocket [1st item in wallet list on landing page]
+ Jewelry
+   Black Semi Precious [1st item in jewelry list on landing page]
+ Smartwatches
+   Gen 5 Smartwatch [3rd item in smartwatches list on landing page]
+
+=========================================================================
+
+[20201130]
+
+# cosmetic fixes on screens
+# react memoization for category, scanner page
+# success page button placement
+# cart page height and spacing
+# filter fix integration and deployment
+# offer banner integration and click disable
+
+----
+
+deployment
+  optimize/split build
+  ci/cd implementation
+  
+----  
+  
+npm run build
+npm install -g serve
+serve -s build
+
+=========================================================================
+
+[20201127]
+
+# fallback image
+# retract search suggestion
+# filter retention on coming back from details
+# ui/ux enhancements
+# overview flow diagram
+
+=========================================================================
+
+[20201126]
+
+# filter code merge and deploy
+# api response unique results filter
+# otp trigger on enter
+# otp paste
+# otp autosubmit when length match
+# broken image fallback
+# ui/ux cosmetic enhancements
+- clear search suggestions before api call
+
+=========================================================================
+
+[20201125]
+
+# application testing cuz of hacking incident
+# unit testing
+# empty cart page makeover
+
+=========================================================================
+
+[20201124]
+
+# implement go back instead of landing page
+# browser navigation: save previous state on product listing
+# image broken fallback fixes
+# merged akash's fixes on product listing scroll
+
+=========================================================================
+
+[202011223]
+
+demo:
+
+- comma separation in price numbers
+
+------
+
+# global style fixes
+# merged filter changes
+
+------
+
++ -> open
+# -> completed & deployed
+> -> delegated
+
+points to address:
+> Persisting Search keystring when moving to search result screen.
+  - searchstr is passed can be accessed via props.location.state.searchString
+? Category icon background color.
+  - comes via imageURL
+# Category title vertical alingment (in case of multiline titles).
+  - todo; need to figure out how
+# Add icon positioning to be aligned. Need breather space on edges.
+  - how should it look like ?
+> Filter pre-population when clicking on "View All" of a category and category header can be removed.
+  - products page to read category info and pre populate filter params
+> Price range filter is not showing selected value
+  - filter fix
+# Product Details to be open by default.
+  - todo: sub category on details page to be open by default
+? Country flag and Country code to be placed adjacent in confirm phone number screen.
+  - using component; tricky manoeuvre
+
+-----
+
+[NA] awaiting success payment icon
+[NA] awaiting 2 apis viz. send email; download pdf for transaction receipt
+>    filter integration
+#### details page swiper correction
+
+=========================================================================
+
+[20201120]
+
+# retry payment notif at /fail
+# attrib change issue: check if variant prodId is different
+# check if valid orderid at category
+# update fonts to root scope of app
+# flag message if product variant not available on attrib change
+# poc autofill otp [code in place; otp delay issue]
+# call order summary to fill transaction details at /success
+# redirect to cart from /fail on button click
+# product listing title cutting off
+# cross check font color on product tiles
+# quantity in details to align center
+# total discount at subtotal level
+# price break up to have vertical spacing
+
+=========================================================================
+
+[20201119]
+
+todo:
+
+# pass order-id -> payment form
+# update image urls
+# delete item from cart icon
+# otp box
+# mobile share options
+# failed payment redirect to cart for repayment
+# s2a disable link to app
+# include custom fonts to app
+# category header on product listing
+# discuss end of payment cycle [should be iframe cuz user should be able to go back to landing]
+# discuss success screen rendering [popup before details ?]
+
+
+# update fe on 155
+> update be on 156
+
+akash:
+	success & fail page ui/css + action-events
+jerry:
+	filters ui/ux
+pranav:
+	otp boxes
+	prodDetails ui/ux
+
+=========================================================================
+
+[20201118]
+
+# replace special char in category name with url codes
+# environment setup
+# sanity test deployed app
+# payment workflow and implementation discussion
+# success/error mapping for payment
+# form implementation in app [root context]
+
+---
+
+1. on checkout call api to load form [prefilled using req params]
+  - form auto submits on load
+2. <payment page @ccavenue> -> user payment action
+3. ccavenue hits public facing URL -> back-end
+   - URL ids success/error
+   - URL redirects to success/error page -> front-end
+   - read info from response and proceed with meta info etc.
+
+=========================================================================
+
+[20201117]
+
+> -> work in progress
+? -> work in progress [self]
+
+> filter
+> payments
+# environment setup [partial: 156 -> 155 connection established but api is not updated @443]
++ beta testing & fixes
+
+=========================================================================
+
+[20201115/16]
+# productVariant api integration
+# default attribute selection on details
+
+=========================================================================
+
+[20201113]
+
+# kt 2 akash on how to proceed with payment integration
+# link on empty cart to go back to king's lnding
+# barcode scan integrate [prodDetails api still needs some work]
+# details share icon click => copy link to clipboard
+# display scanned barcode to user
+> deploy on server
+
+[backend boys]
+# priceSummary [response pending issue]
+# category -> details [not identifying product]
+> pDetails.quantity for inventory control
+> createOrder api
+	input:
+		accoundId: <string>
+		cart: window.cart <array[objects]>
+=========================================================================
+
+[20201112]
+
+? kt 2 akash
+
+[payment integration discussion] cl.com/success cl.com/error
+
+ui -> go to payment [payment form] -> [payment gateway : successURL, failureURL]
+
+after mob verification
+loading
+syntax: -> [input] action [output]
+
+-> if successfully verified otp
+	-> [cart] create order api [order id]
+		-> store mob-no:order-id
+		-> redirect to payment component [keep showing loader till payment is closed]
+	-> [call form and fill value -> submit] pass to payment gateway [iframe]
+	-> [load page in iframe] cc avenue does payment things
+		-> cc avenue hits success/error api
+		
+	?? figure out how to know if payment succeeded or failed
+		-> approach1: keep pinging one api to check status [input-params: mob-orderId]
+		??
+
+----
+
+todo:
+# at /productDetails
+#	1. api/getProductInfo with current attribute selection
+#	2. if api.prodId != url.prodId
+#		-> refresh details page
+#		-> pDetails.quantity == 0 => disable add to cart
+#			-> flag unavailability message
+#	3. on attribute change,
+#		-> goto [2]
+#
+# pass storeId param to api/item
+
+----
+
+[task distribution]
+
+variants 					[frontend/api]
+	- pranav/[harsh/tharun]
+
+filters 					[frontend/api]
+	- jerry/avakash
+
+barcodescan 				[api]
+	- harsh/tharun
+
+paymentpage					[frontend/api]
+	- akash/braja
+
+order confirmation 			[frontend/api]
+	- akash/braja
+
+----
+
+[resolved]
+#issues:
+#  prodDetails
+#	# on multiple refreshes, fabindia icon gets loaded on screen even when imageUrl is different
+
+[done]
+# global
+#	- removed unused dependencies
+# prodDetails
+#	- image borders depending on len(images)
+#	- empty container message (english)
+#	- refactor : separate directory for details page
+
+=========================================================================
+
+[20201109/10/11]
+
+# -> completed
+? -> pending
+> -> coordinated to concerned team
+* -> inconsistent [root cause not identified]
+
+pending items:
+## loader
+
+  landing page:
+##		   - search: on result tap -> call products with productName=searchString
+**		   - broken images [root cause not identified]
+?? [JERRY] - filter icon & page [*ref -> product]              
+
+  product
+?? [JERRY] - filter icon & page [same as landing page]
+##		   - pass category as input to product-listing api
+>>		   - api/productDetails should also have productCategory as input
+?? [AKASH] - slow loading of product items [load items before going to absolute bottom maybe a row before]
+
+search input
+?? [AKASH] - dropdown design implementation
+
+  scanner
+## [AKASH] - camera view not visible
+
+  product details
+##         - initialize product quantity with (if avl) incoming quantity from cart else 1
+##         - on quantity update update cart object
+?? 		   - on attribute change -> update prod-id and other details
+## [JERRY] - styling
+	
+## cart
+##	- on image click -- redirect to product details [and update meta like quantity etc]
+##	- add all input fields on product details to cart object [NA]
+##	  -> on attribute cng prod-id and relevant details -> updated
+
+-----
+
+# -> completed
+? -> pending
+> -> coordinated to concerned team
+
+todo:
+#	test integration of product listing and details
+#	redirect to product listing on category click
+#	implement product details on landing page
+#	pass category as filter to product listing page from landing page
+#	redirect back to landing page in case mandatory param not available on productDetails
+#	barcode scan : redirection to details page
+# 	add/remove to/from cart action from details page
+#	implement search & filter on landing page
+#	search: on result tap -> call products with productName=searchString
+#	pass category as input to product-listing api
+?	onclick of searched element redirect to details page [search items always return product not found]
+	--> call product listing page on click of search element
+	--> pass productName
+>	image not loading issue [server side probably because response closes before file is sent check http length in server]
+?	test barcode scan with actual barcode from store
+	call getToken api at landing page and pass it on each call
+	load only category products in listing page
+
+
+issues:
+[API]	landing page images loads at random [hit ratio ~50%]
+[API]	restrict landing page items to max5
+[API]	api not returning data /api/getProducts
+[API]	api error /api/pricesummary
+[NA]	retain selection on landing page / products page based on cart
+	
+---
+
+# -> completed
+? -> needs corrections
+* -> pending
+
+pending items:
+  search & filter; product-listing; product-details
+  	# check-in code to working branch
+  landing page:
+    ? test [category, brand-logo] apis
+    * refer search & filter component on landing page from product-listing page
+    * refer product tile component from product-listing page
+
+=========================================================================
+
+[20201106]
+
+?? -> dependency
+## -> completed
+
+pending items:
+  landing page - categorical listing
+	## integrate loading store logo thru api
+	## integrate API for categorical listing data
+	?? integrate search & filter using component from product-listing page
+	?? use product-tile component from product listing
+  cart
+	## create html for tax info
+  mobile verification
+	## integrate with proper API [/api/clregOtp]
+	?? on success, redirect to payment page
+  
+-- items on other screens
+  product listing
+    1. search & filter
+	2. search results using elastic search
+	3. redirect to product details on select of item
+  scanner
+	1. cosmetics of scanner page
+	2. redirect to product details page on barcode scan
+  product details
+	1. display information of product  
+
+=========================================================================
+
+[20201102] - cl
+[20201027/28/29/30/31] - cl
+[20201102/03/04/05] - cl
+
+quick items
++ prepare JSON for prod-category
++ integrate price-summary api
++ follow up update genOtp api
+
+: check jere avkash for elastic search
+
+------------
+
+points to discuss:
+##> remove promo ? 
+	- YES
+##> revisiting user flow [otp]
+	- always ask otp [already implemented]	
+==> order confirmation
+	- ask name and mail after payment [pending]
+==> order delivery
+	- mob along with 4dig otp to confirm delivery [API]
+##> transaction timeout [payment]
+	- no need
+NA> delivery sms
+	- via service provider app [V2]
+
+------
+
+tharun
+https://harshj364001.invisionapp.com/console/share/R31OV4BKET/492782521
+
+minor 
+ - update key names of pricesummary api
+ - add pricesummary to swagger
+ - discuss genOTP api [create if not exists; update last_login if exists]
+major
+ - part1: return categorical response for a store [landing page]
+ - part2: return products within selected category for store
+
+pranav
+ - share JSON req/res for landing page
+
+-----------------------
+
+--> | rendered using dummy JSON; api integration pending
+#   | completed
+?   | in progress
+*   | to be taken later
+-   | pending task
+
++ api integration
+--> shop logo                          : [NEW]
+--> product summary [categorical]      : [NEW]
+  * product listing                    : /api/items
+  * product details                    : [NEW] --check /api/getProducts
+--> purchase summary [cart]            : [NEW] 
+--> mobile registration & verification : /api/regOtp; /api/validateLogin
+  * payment gateway                    : [NEW]
+  * product search                     : /api/items [--/api/items needs to extend -- workaround filter at client]
+
+[https://harshj364001.invisionapp.com/console/share/R31OV4BKET/492782521]
+
+----dependencies---
+
+**api development**
+
+icons needed:
+  + app-logo    [landing screen switch to app]
+  + search-icon [product listing]
+  + filter icon [product listing]
+  + scan-barcode icon [header]
+  + empty cart icon   [header]
+  + filled cart icon  [header]
+  + increase quantity icon [cart]
+  + decrease quantity icon [cart]
+  + delete item icon       [cart]
+  + have a promo code icon [cart]
+  + some image/icon to show on cart screen when cart empty [cart]
+  + some image/icon to show if search result is empty      [product listing]
+  + image to place around scanner camera view - screen#4   [scanner]
+ 
+----plan of action----
+ 
+[20201029]
+todo screens:
+  7 - cart page [render using dummy response JSON]
+  8 - cart page -> mobile register
+  9 - cart page -> mobile verify
+
+[20201102/03]
+todo screens:
+  3 - categorical listing of store offering [landing screen]
+  3 - navigation to product listing for selected category
+
+[20201103] -- avakash
+todo screens:
+  6 - product details
+  6 - product details from barcode
+  
+[20201104] -- elastic search
+  3 - search and filter
+  5 - search and filter
+  * - icon pack update & color theming of contactless app
+
+[20201105]
+  - replace dummy JSON with actual APIs for all pending screens
+
+[20201106]
+  - thorough testing by team on mobile devices
+    [dependency: dedicated server for contactless app]
+  - bug fixes / enhancements
+
+[20201109 - onwards]
+ - payment integration
+
+=========================================================================
+
+[20201023] -cl
+
+# scanner nav
+# camera control [no background use]
+
+=========================================================================
+
+[20201022] - cl
+
+# pull up banner styling
+? explore how to include imbedded product pages; create placeholder components
+
+=========================================================================
+
+[20201021] - cl
+
+# load store icon based on url params
+# integrate scanner react
+? open scanner in modern mobile -- can't unless localhost or https
+
+=========================================================================
+
+[20201020] - contactless front end
+
+TODO:
+# bootstrap project
+# implement basic navigation
+3 integrate scanner [quagga]
+
+--
+
++ assess components required
+  - brand logo 
+  - scanner 
+  - cart 
+    > product  [+, -, del]
+	> price summary 
+  - search 
+  - filter 
+  - product listing 
+  - product details 
+  - mobile validation 
+  - 
+
+=========================================================================
+
+[20201019] - develop contactless front-end
+
+TODO:
+# create project folder structure
+# search thru expected APIs to be used
+  - /api/regOtp
+  - /api/validateOtp
+  - /api/orders/getOrderSummary
+  - /api/items
+  - /api/shop/{id}
+  - /api/checkout
+
+---
+
+tech descussion:
+  + performance impact in going with web on react-native [expo]
+    - minor tweakings like image-path needs tuning, but seems doable
+	  [https://medium.com/@toastui/from-zero-to-publish-expo-web-react-native-for-web-tutorial-e3e020d6d3ff]
+	- add custom native modules without expo eject
+	  [https://codersera.com/blog/is-expo-eject-a-good-idea/]
+	- limitations of expo
+	  [https://flatlogic.com/blog/why-i-don-t-want-to-use-react-native-with-expo/]
+	  
+	[YES] 
+	go with react for contactless
+	
+  + project structure of contactless module in terms of scaling
+    - go with style-script in same  script
+	- use central color-config file, static labels etc [/commons]
+	- follow bial-care-structure
+  
+  + any opportunity of reusing existing code from 'PAX Solution'
+    - hook calls might get used
+	- mostly fresh work
+  
+  + backend API integration [any VPN required or local setup?]
+    - need graymatter VPN to access APIs
+	- Harsh [API] / Arun [VPN]
+  
+  + any reference to get sample bar-codes from fabindia products [for development & testing]
+    - check with Sandeep MP
+  
+  + API info [swagger]
+	- need VPN
+	  [http://172.31.145.155:8080/api-docs]
+  
+=========================================================================
+
+[20201016]
+
+# poc walkthru
+
+TODO
++ integrate with fabindia [in react]
+  - scan barcode and pull up product detail
+  - add to cart [cart operations and cart page]
+  - payment [info and gateway]
+  
+-> inquire zoho forms -> build forms first -> then edit for react-app
+-> check if we can reuse existing code and deploy in web-app
+-> if not then develop in react not epxo [connect with Hitesh]
+
+=========================================================================
+
+[20201013/14]
+
++ react-native app using expo
+  # interactive icons to facilitate action items
+  # able to consume an API
+  # redirect to scanner page on click of scan icon
+  # able to open barcode scanner and show scan results
+
+--
+
++ create container 
++ find defining 'useRef' {hook} - init to View to get reference to dom element [keywords: hooks (use fnal )]
+
+
+=========================================================================
+
+[20201009/12]
+
+TODO:
++ Mobile Number Verification thru OTP
+  # internal loop back using server and browser
+  - actual mobile message
++ non volatile logging
++ error handler
+
+Front-End Tech ? [JS/React] - React
+
+------------
+
+# ask braja about opening camera with react-native/react 
+# dump backend-architecture [use existing APIs]
+# work on front-end screens as per new UI
+
+=========================================================================
+
+[20201008]
+
+TODO:
+1. assess screens to identify API calls with high-level I-O exchange
+2. backend architecture update
+3. detail out APIs and JSON exchanges
+
+DISCUSS:
++ need to include mob number in contactless purchase
+  C- to send receipt and avoid panic after payment [considering Indian sentiments]
+  C- to avoid loss of volatile info [accidental closure of web-app; battery anomalies]
+  S- to track user [for future references]
++ explore options to build user profile using only mobile number
+
+# Verified mobile number to be asked right before payment
+
+=========================================================================
+
+[20201007]
+
+TODO:
+#1. poc repo setup
+#2. pax repo setup
+#3. Create UI for proposed-flow scan-qr -> scan-bar -> display-info [implement flow diagram]
+
+=========================================================================
+
+[20201006]
+
+TODO:
+
+# POC: contactless purchase [qr code scanning] -- independent of existing PAX app
+    + scan qr code and open url 
+    + scan barcode and access info
+        > barcode alone can not identify a product uniquely
+        [https://www.jagranjosh.com/general-knowledge/what-is-barcode-and-how-is-it-made-1522059273-1]
+
+        > workaround can be : getting SKU numbers which provide more detailed info
+        [https://www.vendhq.com/blog/sku-numbers/]
+
+        > a barcode can not contain redirection URL => a facilitator app needed
+        [https://www.quora.com/How-do-I-redirect-a-website-by-scanning-a-product-barcode]
+    
+    
+#1. check if mobile camera can scan barcode                  [YES]
+#2. POC, create a webapp and check if qr scan displays info  [YES]
+#3. check if barcode is unique globally for barcode shopping [NO ]
+
+=========================================================================
+
+[20200930]
+
+pax-exp: 4 step onboarding
+mapping flight
+purchasing service
+purchasing products
+
+wonderful application <3
+
+timeline: 3months in a sprint workflow-by-workflow
+
+=========================================================================
+
+[20200928]
+
+scope of work
+1 passenger experience app
+  - flight info; services/product purchase @airport
+2 service provider app
+  - track/fulfil orders; connect with passengers
+3 vendor portal
+  - manage service offerings, listings & pricing; resource management
+4 command center
+  - operation manager to have overview on operators and act
+  
++ trying to make amazon, zomato in one
+
+=========================================================================
+
+[meta]
+
+MERN
+B2C
+
+: Harsh Joshi [get walkthru]

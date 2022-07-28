@@ -1,0 +1,33 @@
+{
+  "CCXow8ALRDrALRFCFS": {
+    "storeId": "CCXow8ALRDrALRFCFS",
+    "items": [
+      {
+        "itemId": "FLBEpQvBMBP2",
+        "itemLabel": "Fossil Sport Backpack",
+        "itemPrice": 3076.5,
+        "itemQuantity": 1,
+        "maxQuantity": 5
+      }
+    ]
+  },
+  "CCXow8ALRDrALHYGN": {
+    "storeId": "CCXow8ALRDrALHYGN",
+    "items": [
+      {
+        "itemId": "A4PJPEpQvJAtGFv8t",
+        "itemLabel": "Cotton White super short kurta",
+        "itemPrice": 1999,
+        "itemQuantity": 1,
+        "maxQuantity": 5
+      },
+      {
+        "itemId": "M4PJPEpQvJAtGCNJB2",
+        "itemLabel": "Linen Cotton Dobby Nehru Jacket",
+        "itemPrice": 7470,
+        "itemQuantity": 3,
+        "maxQuantity": 5
+      }
+    ]
+  }
+}

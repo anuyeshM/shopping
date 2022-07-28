@@ -1,0 +1,21 @@
+// POST
+// request
+
+{
+	"contactNo": "91XXXXXXXXXX",
+	"accountId": "gmgmgm100001020",
+	"items": [
+	  {
+		"itemId": "A4PJPEpQvJAtGFv8t",
+		"itemLabel": "Linen Lucknavi Slim Shirt",
+		"itemPrice": "5000",
+		"itemQuantity": 1
+	  },
+	  {
+		"itemId": "W4PJPEpQvJAtGFvCD2",
+		"itemLabel": "Cambric Printed Short Kurta",
+		"itemPrice": "5000",
+		"itemQuantity": 1
+	  }
+	]
+}

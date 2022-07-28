@@ -1,0 +1,156 @@
+{
+  "status": "success",
+  "statusCode": 200,
+  "message": "Product Details Found",
+  "data": {
+    "pDetails": {
+      "_id": "Z5PJPEpQvJAtGFv9o",
+      "ancestors": [],
+      "productName": "Cotton super short kurta",
+      "productCategory": [
+        {
+          "label": "Fashion & Accessories",
+          "imageUrl": "http://172.31.145.155:8080/catImg/icon_1.png"
+        }
+      ],
+      "productSubCategory": "Kurta",
+      "brand": "Fab India",
+      "material": "Cotton",
+      "class": "Men",
+      "productSku": "10591452GR",
+      "handle": "Cotton super short kurta",
+      "productImageUrl": [
+        "http://172.31.145.155:8080/prodImg/P2.png"
+      ],
+      "shopId": "CCXow8ALRDrALHYGN",
+      "title": "Cotton super short kurta",
+      "type": "simple",
+      "price": 1999,
+      "discountPct": 12,
+      "description": "Crafted from cotton, it features chineese collar and cambric printed design",
+      "originCountry": "IN",
+      "pageTitle": "Cotton super short kurta",
+      "vendor": "",
+      "isTaxable": true,
+      "taxCodeId": "saTNiyd8oDb22aFfP",
+      "productVariants": [
+        {
+          "value": [
+              {
+                  key: 'White',
+                  stockQty: 5,
+                  productId: 'ABCXYZ'
+              },
+              {
+                  key: 'Black',
+                  stockQty: 10,
+                  productId: 'ABCXYZ'
+              }
+          ],
+          "varImageUrl": [],
+          "type": "Color",
+          "isVisible": "Y"
+        },
+        {
+          "value": [
+            "M",
+            "L"
+          ],
+          "stockQty": [
+            "5",
+            "10"
+          ],
+          "varImageUrl": [],
+          "type": "Size",
+          "isVisible": "Y"
+        },
+        {
+          "value": [
+            "Slim Fit",
+            "Regular Fit"
+          ],
+          "stockQty": [
+            "5",
+            "13"
+          ],
+          "varImageUrl": [],
+          "type": "Fit",
+          "isVisible": "Y"
+        },
+        {
+          "value": [
+            "Chineese",
+            "Classic"
+          ],
+          "stockQty": [
+            "5",
+            "10"
+          ],
+          "varImageUrl": [],
+          "type": "Collor",
+          "isVisible": "Y"
+        },
+        {
+          "value": [],
+          "stockQty": [],
+          "varImageUrl": [],
+          "type": "",
+          "isVisible": "N"
+        },
+        {
+          "value": [],
+          "stockQty": [],
+          "varImageUrl": [],
+          "type": "",
+          "isVisible": "N"
+        },
+        {
+          "value": [],
+          "stockQty": [],
+          "varImageUrl": [],
+          "type": "",
+          "isVisible": "N"
+        },
+        {
+          "value": [],
+          "stockQty": [],
+          "varImageUrl": [],
+          "type": "",
+          "isVisible": "N"
+        },
+        {
+          "value": [],
+          "stockQty": [],
+          "varImageUrl": [],
+          "type": "",
+          "isVisible": "N"
+        },
+        {
+          "value": [],
+          "stockQty": [],
+          "varImageUrl": [],
+          "type": "",
+          "isVisible": "N"
+        }
+      ],
+      "optionTitle": "white",
+      "priority": "N",
+      "priceAftDiscount": 1759.12,
+      "discountPrice": 239.88,
+      "priceSummary": [
+        {
+          "subTaxCode": "CGST",
+          "rate": 7,
+          "amount": 123.14
+        },
+        {
+          "subTaxCode": "SGST",
+          "rate": 7,
+          "amount": 123.14
+        }
+      ],
+      "totalTaxAmount": 246.2768
+    },
+    "pVariables": []
+  }
+}

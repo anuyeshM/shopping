@@ -1,0 +1,63 @@
+// reference [https://harshj364001.invisionapp.com/console/share/R31OV4BKET/492782521]
+// screen#3
+
+// POST
+// request
+{
+  "id": "CCXow8ALRDrALHYGN" //storecode
+}
+
+// response
+{
+	"offers": [
+		{
+			"id": "A4PJPEpQvJAtGFv8t",
+			"imageUrl": "http://172.31.145.155:8080/prodImg/P2.png",
+			"title": "50% off"
+		},
+		{
+			"id": "A4PJPEpQvJAtGFv8t",
+			"imageUrl": "http://172.31.145.155:8080/prodImg/P2.png",
+			"title": "50% off"
+		}
+	],
+	"classification": [
+		{
+			"id": "A4PJPEpQvJAtGFv8t",
+			"imageUrl": "http://172.31.145.155:8080/prodImg/P2.png",
+			"title": "Clothing"
+		},
+		{
+			"id": "A4PJPEpQvJAtGFv8t",
+			"imageUrl": "http://172.31.145.155:8080/prodImg/P2.png",
+			"title": "Accessories"
+		}
+	],
+	"categories": [
+		{
+			"categoryId": "ABC_CAT_123", // to be used to fetch products in this category within store
+			"categoryName": "On Sale",
+			"items": [
+				{
+					"id": "A4PJPEpQvJAtGFv8t",
+					"productName": "Cotton White super short kurta",
+					"title": "Cotton White super short kurta",
+					"price": 1999,
+					"productImageUrl": "http://172.31.145.155:8080/prodImg/P2.png"
+				},
+				{
+					"id": "A4PJPEpQvJAtGFv8t",
+					"productName": "Cotton White super short kurta",
+					"title": "Cotton White super short kurta",
+					"price": 1999,
+					"productImageUrl": "http://172.31.145.155:8080/prodImg/P2.png"
+				}
+			]
+		},
+		{
+			"categoryId": "ABC_CAT_234",
+			"categoryName": "New Arrival",
+			"items": []
+		}
+	]
+}

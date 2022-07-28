@@ -1,0 +1,103 @@
+{
+  "data": {
+    "promo": {},
+    "currency": "₹",
+    "productSubtotal": "22897.17",
+    "totalTaxes": "3138.44",
+    "totalDiscountAmt": "479.76",
+    "orderTotal": "22417.41",
+    "products": [
+  	{
+  	  "storeId": "CCXow8ALRDrALHYGN",
+  	  "storeNm": "A quick brown fox jumps over the lazy dog",
+  	  "items": [
+  		{
+  		  "itemId": "W4PJPEpQvJAtGFv8t",
+  		  "itemLabel": "Cotton Black super short kurta",
+  		  "itemPrice": 1999,
+  		  "itemQuantity": 1,
+  		  "maxQuantity": 5,
+  		  "actualPrice": 1999,
+  		  "currPrice": "1759.12",
+  		  "discountPct": 12
+  		},
+  		{
+  		  "itemId": "A4PJPEpQvJAtGFv8t",
+  		  "itemLabel": "Cotton White super short kurta",
+  		  "itemPrice": 1999,
+  		  "itemQuantity": 1,
+  		  "maxQuantity": 5,
+  		  "actualPrice": 1999,
+  		  "currPrice": "1759.12",
+  		  "discountPct": 12
+  		},
+  		{
+  		  "itemId": "A4PJPEpQvJAtGFv8t",
+  		  "itemLabel": "Cotton White super short kurta",
+  		  "itemPrice": 1999,
+  		  "itemQuantity": 1,
+  		  "maxQuantity": 5,
+  		  "actualPrice": 1999,
+  		  "currPrice": "1759.12",
+  		  "discountPct": 12
+  		},
+  		{
+  		  "itemId": "A4PJPEpQvJAtGFv8t",
+  		  "itemLabel": "Cotton White super short kurta",
+  		  "itemPrice": 1999,
+  		  "itemQuantity": 1,
+  		  "maxQuantity": 5,
+  		  "actualPrice": 1999,
+  		  "currPrice": "1759.12",
+  		  "discountPct": 12
+  		}
+  	  ]
+  	},
+  	{
+  	  "storeId": "CCXow8ALRDrALRFCBP",
+  	  "storeNm": "Brics & Picadro",
+  	  "items": [
+  		{
+  		  "itemId": "BRSpQvBYUESSB2",
+  		  "itemLabel": "B|Y ULISSE 21in EXPANDABLE SPINNER - SKY BLUE",
+  		  "itemPrice": 18899.17,
+  		  "itemQuantity": 1,
+  		  "maxQuantity": 5,
+  		  "actualPrice": 1999,
+  		  "currPrice": "1759.12",
+  		  "discountPct": 12
+  		}
+  	  ]
+  	},
+  	{
+  	  "storeId": "CCXow8ALRDrALRFCDD",
+  	  "storeNm": "Duty Free Express Departure",
+  	  "items": [
+  		{
+  		  "itemId": "A4PJPEpQvJAtGFv48",
+  		  "itemLabel": "Gucci",
+  		  "itemPrice": 5680,
+  		  "itemQuantity": 1,
+  		  "maxQuantity": 5,
+  		  "actualPrice": 1999,
+  		  "currPrice": "1759.12",
+  		  "discountPct": 12
+  		},
+  		{
+  		  "itemId": "A4PJPEpQvJAtGFv49aa",
+  		  "itemLabel": "Age Perfect Golden Age Lotion 125ml",
+  		  "itemPrice": 1200,
+  		  "itemQuantity": 1,
+  		  "maxQuantity": 5,
+  		  "actualPrice": 1999,
+  		  "currPrice": "1759.12",
+  		  "discountPct": 12
+  		}
+  	  ]
+  	}
+    ]
+  },
+  "status": "success",
+  "statusCode": 200,
+  "message": "product details"
+}
