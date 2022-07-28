@@ -1,0 +1,145 @@
+.header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 58pt;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  background-color: #fafafa;
+  z-index: 50;
+}
+
+.header-static {
+  width: calc(100% - 7rem);
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-static a {
+  float: left;
+  height: 100%;
+}
+
+.header-static a:nth-child(1) {
+  width: 3rem;
+}
+.header-static a:nth-child(2) {
+  width: calc(100% - 3rem);
+}
+
+.header .goto-storelisting {
+  float: left;
+  width: 3rem;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.header .goto-storelisting-image {
+  margin: 0;
+  background-size: 35px;
+  background-position: center;
+  background-image: url('../../assets/images/arrowLeft.svg');
+}
+
+.header .store-name {
+  /* font-size: 18pt;
+  line-height: 22pt;
+  color: rgb(31, 35, 38);
+  font-weight: bold;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center; */
+
+  font-size: 18pt;
+  color: rgb(31, 35, 38);
+  font-weight: bold;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 25px;
+  height: calc(100% - 50px);
+}
+
+.header .airport-logo {
+  margin: 0;
+  width: 100%;
+  height: 50pt;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 20px;
+  background-image: url('../../assets/images/KIAL.png');
+}
+
+.header .header-action {
+  display: flex;
+  width: 7rem;
+  /* background-color: #979; */
+}
+
+.header .header-action:focus {
+  outline: none;
+}
+
+.header .brand-logo {
+  content: 'Home';
+  width: 10em;
+  height: 3rem;
+  /*background-image: url("../../assets/images/fabindia.webp");*/
+  background-size: 100% 3rem;
+  background-repeat: no-repeat;
+}
+
+.header .header-scanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 6px;
+}
+
+.header .header-scanner-icon {
+  background-image: url('../../assets/images/scanner-icon.svg');
+  background-size: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header .header-cart {
+  width: 3rem;
+  height: 3rem;
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-color: #979; */
+}
+
+.header .header-cart-empty {
+  background-image: url('../../assets/images/empty-cart-icon.svg');
+  background-position: 0px center;
+}
+
+.header .header-cart-filled {
+  background-image: url('../../assets/images/filled-cart-icon.svg');
+  background-size: 2.5rem;
+  background-position: 0px 1px;
+}
+
+.header .amount-container {
+  font-size: 12pt;
+  line-height: 22pt;
+  color: rgb(31, 35, 38);
+  font-weight: bold;
+  margin-right: 7pt;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}

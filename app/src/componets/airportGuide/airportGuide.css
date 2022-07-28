@@ -1,0 +1,119 @@
+.airport-guide-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(250,250,250);
+    overflow: hidden;
+}
+.airport-guide-container .loader-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.airport-guide-container .content-container {
+    width: calc(100% - 10pt);
+    padding-left: 10pt;
+    padding-right: 10pt;
+    margin: auto;
+    /* height: 100%; */
+    padding-top: 1rem;
+    background-color: rgb(250,250,250);
+    overflow-y: auto;
+}
+.airport-guide-container .card-listing-container {
+    width: 100%;
+    /* margin: auto; */
+    /* height: 100%; */
+    /* padding-top: 4rem; */
+    background-color: rgb(250,250,250);
+    overflow-y: auto;
+}
+.airport-guide-container .card-listing-container .card {
+    /* margin: 0.5rem 1vw;
+    float: left;
+    box-shadow: 0px 0px 5px 0px #ddd;
+    border-radius: 1.2rem;
+    padding-bottom: 2%;
+    position: relative;
+    background-color: #ddd; */
+    position: relative;
+    margin-bottom: 10pt;
+    /* margin-right: 10pt; */
+    /* height: 200pt; */
+    height: 125pt;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(50% - 10pt);
+    /* width: 50%; */
+    float: left;
+    background-color: #fff;
+    /* padding-bottom: 5px; */
+  }
+  .airport-guide-container .card-listing-container .card-top-container {
+      display: flex;
+      flex-direction: row;
+      margin-top: 15pt;
+      margin-left: 15pt;
+      width: calc(100% - 15pt);
+      height: 35pt;
+      /* background-color: blue; */
+  }
+  .airport-guide-container .card-listing-container .card-icon-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35pt;
+      height: 35pt;
+      border-radius: 4pt;
+      background-color: rgba(71, 184, 150, 0.1);
+  }
+.airport-guide-container .card-listing-container .card-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* width: calc(100% - 40pt); */
+    margin-left: 5pt;
+    margin-right: 5pt;
+      /* background-color: salmon; */
+}
+.airport-guide-container .card-listing-container .card-title-text {
+    /* height: 100%; */
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: Optima-Bold;
+    color: rgb(32,35,38);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+      /* background-color: salmon; */
+}
+.airport-guide-container .card-listing-container .card-desc-container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 5pt;
+    margin-bottom: 10pt;
+    margin-left: 15pt;
+    margin-right: 5pt;
+    width: calc(100% - 20pt);
+    height: 100%;
+    /* background-color: red; */
+}
+.airport-guide-container .card-listing-container .card-desc-text {
+    /* height: 100%; */
+    font-size: 12pt;
+    color: rgb(121,123,125);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+      /* background-color: salmon; */
+}

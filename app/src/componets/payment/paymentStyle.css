@@ -1,0 +1,16 @@
+.payredir-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.payredir-loader-wrapper {
+  padding-top: 10rem;
+  text-align: center;
+}
+
+.payredir-message {
+  text-align: center;
+  margin: 4rem auto;
+  padding: 0px 2rem;
+  text-transform: none !important;
+}

@@ -1,0 +1,228 @@
+.ef-modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 630px;
+  min-width: 320px;
+  height: auto;
+  z-index: 2000;
+  visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.ef-modal-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20pt;
+}
+
+.ef-content {
+  background-color: #fafafa;
+  border-top-left-radius: 30pt;
+  border-top-right-radius: 30pt;
+}
+
+.ef-show {
+  visibility: visible;
+}
+
+.ef-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  transition: all 0.3s;
+}
+
+.ef-show ~ .ef-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ef-perspective,
+.ef-perspective body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.ef-perspective body {
+  background: #222;
+  perspective: 600px;
+}
+
+.ef-modal .ef-close-line-container {
+  height: 30pt;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 10pt;
+  justify-content: center;
+}
+
+.ef-modal .ef-content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.ef-modal .ef-modal-content-overlay {
+  border-radius: 15pt;
+  width: 90%;
+}
+
+.ef-modal .ef-close-line-container .ef-close-line {
+  width: 40pt;
+  height: 3pt;
+  border-radius: 1.5pt;
+  background-color: #d7dee5;
+}
+
+.ef-modal .ef-cross-container {
+  height: 30pt;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0pt 15pt;
+}
+
+.ef-modal .scrollview {
+  display: flex;
+  flex: 1 1;
+
+  flex-direction: column;
+  overflow: scroll;
+  padding: 10pt;
+}
+
+.ef-modal .ef-header {
+  display: flex;
+  align-items: center;
+  padding: 0pt 16pt;
+}
+
+.ef-modal .ef-header .rate-text {
+  margin-top: 2pt;
+  /* margin-left: 5pt; */
+  text-transform: none;
+}
+
+.ef-modal .ef-header .rate-backImage {
+  margin-right: 5pt;
+}
+
+.ef-modal .info-section {
+  margin: 10pt 0pt;
+  padding: 0pt 16pt;
+}
+
+.ef-modal .info-body {
+  padding: 10pt 0pt;
+  display: flex;
+}
+
+.ef-modal .info-body .info-image {
+  width: 40%;
+}
+
+.ef-modal .info-body .info-content {
+  width: 60%;
+}
+
+.ef-modal .info-body .infoItem-label {
+  color: var(--font-light);
+  margin-bottom: 5pt;
+}
+
+.ef-modal .info-body .infoItem-text {
+  color: var(--font-dark);
+  margin-left: 2pt;
+}
+
+.ef-modal .service-rating-wrapper {
+  padding: 0pt 16pt;
+  margin-bottom: 10pt;
+}
+
+.ef-modal .rating-body {
+  display: flex;
+  /* justify-content: center; */
+  margin: 10pt 0pt;
+}
+
+.ef-modal .rating-style {
+  display: flex !important;
+  width: 85%;
+  justify-content: space-evenly;
+}
+
+.ef-modal .upload-header-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10pt;
+}
+
+.ef-modal .upload-icon-container {
+  margin-left: 10pt;
+  width: 60%;
+}
+
+.ef-modal .checkbox-wrapper {
+  padding: 0pt 10pt;
+  margin-bottom: 10pt;
+  display: flex;
+}
+
+.ef-modal .checkbox-text {
+  padding-top: 10pt;
+  color: var(--font-light);
+}
+
+/* Effect 3: Slide from the bottom */
+.ef-effect-3 .ef-content {
+  -webkit-transform: translateY(20%);
+  -moz-transform: translateY(20%);
+  -ms-transform: translateY(20%);
+  transform: translateY(20%);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ef-show.ef-effect-3 .ef-content {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.ef-modal .upload-container {
+  height: 100pt;
+  float: left;
+  margin: 10pt;
+}
+
+.ef-modal .rating-container {
+  margin-top: 20pt;
+}
+
+.ef-modal .section-wrapper-additional {
+  display: flex;
+  justify-content: center;
+  padding: 0pt 16pt;
+  margin: 20pt 0pt 10pt 0pt;
+}
+
+.ef-modal .section-wrapper-additional .add-text {
+  color: var(--primary-color);
+  text-decoration: underline;
+}

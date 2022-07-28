@@ -1,0 +1,655 @@
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(250, 250, 250);
+  align-items: center;
+}
+.payment-container .flight-container {
+  display: flex;
+  width: 90%;
+  height: 18%;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+.payment-container .flight-container .flight {
+  width: 30%;
+  height: 85%;
+}
+.payment-container .text-container {
+  display: flex;
+  width: 100%;
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 15px;
+  /* background-color: sandybrown; */
+}
+.payment-container .text-container .text {
+  font-weight: bold;
+  font-size: 24pt;
+  text-align: center;
+  letter-spacing: 0vh;
+  color: rgb(32, 35, 38);
+}
+.payment-container .desc-text-container {
+  width: 90%;
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 15px;
+  /* background-color: silver; */
+}
+.payment-container .desc-text-container .description {
+  margin-bottom: 10px;
+  font-size: 14pt;
+  text-align: center;
+  color: rgb(121, 123, 125);
+  text-transform: none !important;
+}
+.payment-container .transaction-container {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  background-color: rgb(255, 255, 255);
+  margin-top: calc(20pt - 20px);
+  border-radius: 15px;
+  padding-left: 15pt;
+  padding-top: 5pt;
+  padding-bottom: 5pt;
+  /* background-color: rosybrown; */
+}
+.payment-container .transaction-container .transactionTopTextImgContainer {
+  display: flex;
+  width: 100%;
+  height: 15%;
+  margin-top: 15px;
+  flex-direction: row;
+}
+.payment-container
+  .transaction-container
+  .transactionTopTextImgContainer
+  .transactionTopTextContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  background-color: slategrey;
+}
+.payment-container
+  .transaction-container
+  .transactionTopTextImgContainer
+  .transactionTopTextContainer
+  .transactionTopText {
+  font-size: 16pt;
+  font-weight: bold;
+  letter-spacing: 0vh;
+  color: rgb(32, 35, 38);
+}
+.payment-container
+  .transaction-container
+  .transactionTopTextImgContainer
+  .transactionTopImgContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  margin-left: -15pt;
+}
+.payment-container
+  .transaction-container
+  .transactionTopTextImgContainer
+  .transactionTopImgContainer
+  .mailContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgb(242, 255, 251);
+}
+.payment-container .mail {
+  padding-left: 2rem;
+  width: 18pt;
+  height: 14pt;
+  vertical-align: middle;
+}
+.payment-container
+  .transaction-container
+  .transactionTopTextImgContainer
+  .transactionTopImgContainer
+  .downloadContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgb(242, 255, 251);
+}
+.payment-container .download {
+  padding-left: 2rem;
+  width: 18pt;
+  height: 14pt;
+  vertical-align: middle;
+}
+.payment-container .transaction-container .transactionNoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5pt;
+
+  /* background-color: rosybrown; */
+
+  /* background-color: turquoise; */
+}
+.payment-container .transaction-details-label-head {
+  font-size: 14pt;
+  font-weight: bold;
+  color: rgb(32, 35, 38);
+  vertical-align: middle;
+}
+.payment-container .transaction-details-label {
+  font-size: 12pt;
+  font-weight: bold;
+  color: rgb(32, 35, 38);
+  vertical-align: middle;
+}
+.payment-container .transaction-details-value {
+  font-size: 12pt;
+  color: rgb(121, 123, 125);
+  padding-left: 0.5rem;
+  align-self: flex-end;
+  font-weight: 500;
+}
+.payment-container
+  .transaction-container
+  .transactionNoContainer
+  .transactionNoHeadingContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.payment-container
+  .transaction-container
+  .transactionNoContainer
+  .transactionNoHeadingContainer
+  .transactionNoHeading {
+  color: rgb(32, 35, 38);
+  font-weight: bold;
+  font-size: 14pt;
+  letter-spacing: 0vh;
+}
+.payment-container
+  .transaction-container
+  .transactionNoContainer
+  .transactionNoInfoContainer {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: -10pt;
+}
+.payment-container
+  .transaction-container
+  .transactionNoContainer
+  .transactionNoInfo {
+  color: rgb(121, 123, 125);
+  font-weight: bold;
+  font-size: 14pt;
+  letter-spacing: 0vh;
+}
+.payment-container .transaction-container .transactionDateContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10%;
+  margin-top: 10px;
+}
+.payment-container
+  .transaction-container
+  .transactionDateContainer
+  .transactionDateHeadingContainer {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+.payment-container
+  .transaction-container
+  .transactionDateContainer
+  .transactionDateHeadingContainer
+  .transactionDateHeading {
+  color: rgb(32, 35, 38);
+  font-weight: bold;
+  font-size: 14pt;
+  letter-spacing: 0vh;
+}
+.payment-container
+  .transaction-container
+  .transactionDateContainer
+  .transactionDateInfoContainer {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.payment-container
+  .transaction-container
+  .transactionDateContainer
+  .transactionDateInfoContainer
+  .transactionDateInfo {
+  color: rgb(121, 123, 125);
+  font-weight: bold;
+  font-size: 14pt;
+  letter-spacing: 0vh;
+}
+.payment-container .transaction-container .transactionTypeContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10%;
+  margin-top: 20px;
+}
+.payment-container
+  .transaction-container
+  .transactionTypeContainer
+  .transactionTypeHeadingContainer {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+.payment-container
+  .transaction-container
+  .transactionTypeContainer
+  .transactionTypeHeadingContainer
+  .transactionTypeHeading {
+  color: rgb(32, 35, 38);
+  font-weight: bold;
+  font-size: 14pt;
+  letter-spacing: 0vh;
+}
+.payment-container
+  .transaction-container
+  .transactionTypeContainer
+  .transactionTypeInfoContainer {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.payment-container
+  .transaction-container
+  .transactionTypeContainer
+  .transactionTypeInfoContainer
+  .transactionTypeInfo {
+  color: rgb(121, 123, 125);
+  font-weight: bold;
+  font-size: 14pt;
+  letter-spacing: 0vh;
+}
+.payment-container .transaction-container .transactionMerchantContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10%;
+  margin-top: 20px;
+}
+.payment-container
+  .transaction-container
+  .transactionMerchantContainer
+  .transactionMerchantHeadingContainer {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+.payment-container
+  .transaction-container
+  .transactionMerchantContainer
+  .transactionMerchantHeadingContainer
+  .transactionMerchantHeading {
+  color: rgb(32, 35, 38);
+  font-weight: bold;
+  font-size: 14pt;
+  letter-spacing: 0vh;
+}
+.payment-container
+  .transaction-container
+  .transactionMerchantContainer
+  .transactionMerchantInfoContainer {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.payment-container
+  .transaction-container
+  .transactionMerchantContainer
+  .transactionMerchantInfoContainer
+  .transactionMerchantInfo {
+  color: rgb(121, 123, 125);
+  font-weight: bold;
+  font-size: 14pt;
+  letter-spacing: 0vh;
+}
+.payment-container .success-button-container {
+  margin: 6% 2%;
+  width: 98%;
+  height: 40pt;
+}
+.payment-container .success-button {
+  margin: 0 5px;
+  float: left;
+  width: calc(50% - 10px);
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 16pt;
+  border: none;
+  text-align: center;
+}
+.payment-container .gohome {
+  background-color: #008080;
+}
+.payment-container .receipt {
+  background-color: #47b896;
+}
+.payment-container .success-button-container-webview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 6% 2%;
+  width: 98%;
+  height: 100pt;
+  /* background-color: black; */
+}
+.payment-container .go-home-webview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 20px);
+  height: 35pt;
+  border-radius: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 16pt;
+  border: none;
+  background-color: #47b896;
+  margin-bottom: 15px;
+}
+.payment-container .go-home-webview-disabled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 20px);
+  height: 35pt;
+  border-radius: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 16pt;
+  border: none;
+  background-color: #d3d3d3;
+  margin-bottom: 15px;
+  opacity: 0.6;
+}
+.order-confirmation {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.payment-modal-content {
+  position: absolute;
+  z-index: 1;
+  padding-top: 30px;
+  bottom: 0;
+  background-color: #fefefe;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  max-height: 90vh;
+  /* background-color: salmon; */
+}
+.payment-content-container {
+  width: calc(100% - 60px);
+  height: 100%;
+  margin-top: 10px;
+  padding-bottom: 5rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.modal-close-line-container {
+  height: 20px;
+  width: 100%;
+  background-color: transparent;
+  border-width: 0;
+  display: flex;
+  justify-content: center;
+}
+.modal-close-line {
+  height: 3px;
+  background-color: #828282;
+  width: 80px;
+  margin-top: 5px;
+}
+.modalHeadingContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  width: 100%;
+  height: 5%;
+  /* padding-left: 60px; */
+  align-items: center;
+  justify-content: flex-start;
+}
+.modalHeading {
+  font-size: 18pt;
+  font-weight: bold;
+  letter-spacing: 0;
+  color: rgb(32, 35, 38);
+}
+.modalDescriptionContainer {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  height: 10%;
+  /* padding-left: 60px; */
+  align-items: center;
+  justify-content: flex-start;
+}
+.modalDescription {
+  width: 85%;
+  height: 100%;
+  font-size: 12pt;
+  color: rgb(121, 123, 125);
+  text-transform: none !important;
+}
+.name-input-container {
+  display: flex;
+  width: 100%;
+  height: 70pt;
+  /* background-color: #828282; */
+  /* padding-left: 60px; */
+  margin-top: 10pt;
+  flex-direction: column;
+}
+.name-input-container .email-error-message {
+  height: 10pt;
+  font-size: 10pt;
+  line-height: 10pt;
+  color: #b00020;
+}
+.textInputHeading {
+  display: flex;
+  width: 100%;
+  /* align-items: flex-start; */
+  font-size: 14pt;
+  font-weight: bold;
+  color: rgb(32, 35, 38);
+}
+.textInput {
+  margin-top: 10px;
+  display: flex;
+  width: 95%;
+  height: 30pt;
+  font-size: 14pt;
+  text-align: start;
+  text-indent: 20px;
+  margin-bottom: 10pt;
+  border: 1px solid #e8e9e9;
+  border-radius: 10pt;
+  text-transform: none;
+}
+.payment-modal-content .phone-input {
+  margin-top: 10px;
+  display: flex;
+  width: 95%;
+  height: 40px;
+  font-size: 14pt;
+  text-align: start;
+  text-indent: 20px;
+  margin-bottom: 10pt;
+  text-transform: none;
+}
+.language-picker-wrapper {
+  width: 95%;
+  display: flex;
+  /* background-color: white; */
+  border: 1px solid #e8e9e9;
+  border-radius: 10pt;
+  height: 30pt;
+  margin-top: 10pt;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.language-picker-wrapper .language-dropdown {
+  display: flex;
+  flex-direction: column;
+  margin-top: 33pt;
+  margin-left: 3pt;
+  /* height: 100pt; */
+  padding: 0pt 10pt;
+  width: 90%;
+  position: absolute;
+  background-color: #f9f9f9;
+  /* max-height: 100pt; */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /* padding: 12px 16px; */
+  z-index: 1;
+  overflow: scroll;
+  border-bottom-right-radius: 10pt;
+  border-bottom-left-radius: 10pt;
+  align-self: baseline;
+}
+.language-dropdown .language-tile {
+  height: 30pt;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* padding-left: 10pt; */
+  font-size: 10pt;
+  color: rgb(32, 35, 38);
+}
+.language-picker-wrapper .react-language {
+  margin-left: 16px;
+  color: rgb(32, 35, 38);
+  font-size: 10pt;
+  letter-spacing: 1px;
+}
+.add-ones-container {
+  display: flex;
+  width: 100%;
+  height: 40pt;
+  margin-top: 10pt;
+  flex-direction: column;
+}
+.add-ones-checkbox-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  margin-top: 10pt;
+}
+/* .order-confirmation-continue-button {
+  margin: 20px auto;
+  width: 85%;
+  height: 40pt;
+  border-radius: 25px;
+  background-color: rgb(71, 184, 150);
+  color: rgb(255, 255, 255);
+  font-size: 14pt;
+  border: none;
+} */
+.modal-submit-button-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5rem;
+  padding-bottom: 1rem;
+  background-color: #fff;
+}
+.modal-submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 4.5rem);
+  margin-left: 1rem;
+  margin: auto;
+  height: 100%;
+  background-color: #47b896;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* OVERIDES START */
+.payment-modal-content .react-tel-input .form-control {
+  width: calc(100% - 5rem) !important;
+  height: 3rem !important;
+  line-height: 3rem !important;
+  padding: 0 2rem !important;
+  margin-left: 4rem !important;
+  border-radius: 0 1rem 1rem 0 !important;
+  font-size: 15px;
+  letter-spacing: 0.1rem;
+  border-color: #e8e9e9;
+}
+.payment-modal-content .react-tel-input .flag-dropdown {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  border: 1px solid #e8e9e9;
+  border-radius: 3px 0 0 3px;
+}
+/* OVERIDES END */

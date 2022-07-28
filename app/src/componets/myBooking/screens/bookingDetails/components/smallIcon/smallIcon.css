@@ -1,0 +1,14 @@
+.small-icon {
+  height: 35pt;
+  width: 40pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5pt;
+  background-color: var(--primary-light);
+}
+
+.small-icon .small-icon-image {
+  height: 20pt;
+  width: 20pt;
+}

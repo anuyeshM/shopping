@@ -1,0 +1,92 @@
+.gmcl .scanner-container {
+  padding-top: 2rem;
+  width: 100vw;
+  height: calc(100% - 2rem);
+  text-align: center;
+}
+
+.gmcl .scanner-container .message {
+  margin: 0 auto 3rem auto;
+}
+
+.gmcl .scanner-container .message-label {
+  font-weight: bold;
+}
+
+.gmcl .scanner-container .message-subtext {
+}
+
+.gmcl .scanner-container .scanner-outline {
+}
+
+.gmcl .barcode-marker .scanner-view {
+  width: 90%;
+  height: 90%;
+  margin: 4% auto;
+  /* background-color: gray; */
+  /* background-image: url("../../assets/images/barcode-scan-icon.jpg"); */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.gmcl .scanner-container .scanner-view video {
+  width: 100%;
+  height: 100%;
+}
+
+.gmcl .scanner-container .scanner-view canvas {
+  display: none;
+}
+
+.gmcl .scanner-container .rescan {
+  text-align: center;
+}
+
+.gmcl .rescan {
+  border-radius: 1rem;
+  width: 50%;
+  margin: 6rem auto;
+  height: 3em;
+  line-height: 3em;
+  box-shadow: 0 5px 30px 10px #ddd;
+  position: relative;
+  z-index: 1;
+}
+
+.gmcl .scanner-container .barcode-marker {
+  margin: auto;
+  border: 0.25em solid #47b896;
+  position: relative;
+  border-radius: 20pt;
+  width: 80%;
+  height: 15rem;
+}
+
+.gmcl .scanner-container .barcode-marker::before,
+.barcode-marker::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #fff;
+}
+
+.gmcl .scanner-container .barcode-marker::after {
+  top: -2em;
+  bottom: -2em;
+  left: 3em;
+  right: 3em;
+}
+
+.gmcl .scanner-container .barcode-marker::before {
+  left: -2em;
+  right: -2em;
+  top: 3em;
+  bottom: 3em;
+}
+
+.gmcl .scanner-container .barcode-marker .heading {
+  position: relative;
+  z-index: 1;
+}

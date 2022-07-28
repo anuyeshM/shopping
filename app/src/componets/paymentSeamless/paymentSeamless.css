@@ -1,0 +1,95 @@
+.shoppingDetails-container {
+  background-color: #fff;
+  width: 100%;
+  min-height: 100%;
+}
+.shoppingDetails-container-body {
+  padding: 5pt 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shoppingDetails-container .loyaltyPoints-wrapper {
+  height: 70pt;
+  width: 100%;
+  border-radius: 16pt;
+  background-color: rgb(251, 251, 251);
+  border: 1pt solid #e8e9e9;
+}
+
+.shoppingDetails-container .paymentOptions-wrapper {
+  margin-top: 15pt;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.shoppingDetails-container .paymentOptions-wrapper .paymentOptions-header {
+  font-size: 12pt;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.shoppingDetails-container .paymentOptions-wrapper .paymentOptions-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.shoppingDetails-container .paymentOptions-body .paymentOption {
+  height: 35pt;
+  width: 100%;
+  /* border: 1pt solid #e8e9e9; */
+  margin: 10pt 0pt;
+  border-radius: 16pt;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.shoppingDetails-container .paymentOptions-body .paymentOption-disabled {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(232, 233, 233);
+  border-radius: 16pt;
+  border: 1pt solid rgb(232, 233, 233);
+}
+
+.shoppingDetails-container .paymentOption .paymentOption-left {
+  height: 100%;
+  width: 85%;
+  border: 1pt solid #d8d8d8;
+  display: flex;
+  border-top-left-radius: 16pt;
+  border-bottom-left-radius: 16pt;
+  border-right: 0;
+}
+
+.shoppingDetails-container .paymentOption-left .paymentOption-left-image {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shoppingDetails-container .paymentOption-left .paymentOption-left-text {
+  font-size: 14px;
+  margin: auto 0pt;
+  line-height: 14px;
+}
+
+.shoppingDetails-container .paymentOption .paymentOption-right {
+  display: flex;
+  height: 100%;
+  width: 15%;
+  border: 1pt solid #e8e8e9;
+  border-top-right-radius: 16pt;
+  border-bottom-right-radius: 16pt;
+  background-color: rgb(250, 250, 250);
+  background-image: url('../../assets/images/arrowRight.svg');
+  background-size: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

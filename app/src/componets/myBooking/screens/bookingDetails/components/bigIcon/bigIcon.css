@@ -1,0 +1,15 @@
+.bigIcon-container {
+  height: 60pt;
+  border: 1pt solid var(--primary-color);
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  width: 70pt;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 16pt;
+}
+
+.bigIcon-container .image {
+  max-height: 30pt;
+}

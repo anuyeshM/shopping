@@ -1,0 +1,129 @@
+.myBookings-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(250, 250, 250);
+  overflow: hidden;
+  /* background-color: #979; */
+}
+.myBookings-container .loader-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.myBookings-container .content-container {
+  position: relative;
+  background-color: rgb(250, 250, 250);
+  display: flex;
+  flex-direction: column;
+  margin-top: 0pt;
+}
+
+.myBookings-container .main-container {
+  width: calc(100% - 40pt);
+  height: 100%;
+  margin-top: 10pt;
+}
+.myBookings-container .booking-section {
+  width: 100%;
+  height: calc(100% - 80pt);
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  padding: 10pt 0pt;
+}
+
+.myBookings-container .booking-section-open {
+  height: calc(100% - 80pt) !important;
+}
+
+.myBookings-container .booking-header-wrapper {
+  width: 100%;
+  height: 40pt;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.myBookings-container .booking-header {
+  display: flex;
+  width: calc(100% - 32pt);
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.myBookings-container .booking-header-text {
+  width: 60%;
+  font-size: 14pt;
+  font-weight: bold;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #47b896;
+}
+.myBookings-container .bookings-num-text {
+  width: 80pt;
+  font-size: 12pt;
+  color: rgb(143, 145, 146);
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.myBookings-container .booking-flight-band-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.myBookings-container
+  .booking-flight-band-wrapper
+  .booking-flight-band-content {
+  width: calc(100% - 25pt);
+}
+.myBookings-container .booking-flight-band {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: 12pt;
+  /* margin-top: 10pt; */
+  color: rgb(121, 123, 125);
+  white-space: pre;
+}
+
+.myBookings-container .booking-flight-band-text {
+  /* background-color: #969; */
+  width: 90%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.myBookings-container .booking-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.myBookings-container .last-element {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.MuiCollapse-wrapper {
+  display: flex;
+  width: 100%;
+}

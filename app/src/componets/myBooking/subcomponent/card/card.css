@@ -1,0 +1,67 @@
+.booking-card-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100pt;
+  padding: 10pt 0pt;
+  border: 1pt solid #e1faf2;
+  margin: 10pt 0pt;
+  margin-top: 0pt;
+  background-color: #fff;
+}
+
+.card-noBackground {
+  border: 0pt;
+  background-color: transparent;
+  min-height: 0;
+  padding-top: 10pt;
+  margin: 0pt;
+}
+
+.booking-card-container .booking-card-content {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  height: 100%;
+}
+
+.booking-card-container .image-wrapper {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  border-radius: 10pt;
+  justify-content: center;
+}
+.booking-card-container .card-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  min-height: 90%;
+  padding: 0pt 7pt;
+}
+.booking-card-container .card-title-text {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5pt;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: none;
+  margin: 3pt 0pt;
+}
+
+.booking-card-container .card-text {
+  font-size: 14px;
+  margin: 3pt 0pt;
+  color: rgb(143, 145, 146);
+}
+
+.booking-card-container .card-subHeader-text {
+  color: #47b896;
+}
+
+.booking-card-container .card-text-value {
+  color: #000;
+}

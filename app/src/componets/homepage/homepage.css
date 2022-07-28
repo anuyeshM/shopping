@@ -1,0 +1,451 @@
+.homepage-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10pt;
+  height: 100vh;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.homepage-container .survey-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0.5rem 0rem;
+  justify-content: space-between;
+  width: 85%;
+  border-radius: 10pt;
+  background-color: rgb(242, 255, 251);
+}
+.survey-container .survey-text {
+  width: 80%;
+  margin-left: 15px;
+  font-size: 10pt;
+  line-height: 15pt;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: none;
+}
+
+.survey-container .survey-cross-container {
+  margin-right: 15px;
+}
+
+.homepage-container .myflights-container {
+  margin-top: 15pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.myflights-container .header-text {
+  color: '#000';
+  font-size: 14pt;
+  font-weight: bold;
+  margin: 0px 30px;
+}
+
+.myflights-container .noflights-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10pt;
+  border: 1pt solid rgb(216, 216, 216);
+  width: 85%;
+  height: 130pt;
+  align-self: center;
+  background-color: rgba(67, 180, 146, 0.04);
+  margin-top: 10pt;
+}
+
+.myflights-container .flights-cards-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100%;
+  height: 146pt;
+  margin-top: 5pt;
+}
+
+.myflights-container .flights-cards-wrapper-horzScroll {
+  display: grid;
+  position: relative;
+  grid-gap: 1.5rem;
+  padding: 0 1.5rem;
+}
+
+.myflights-container .flights-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10pt;
+  width: 100%;
+  height: 130pt;
+  background-image: url('../../assets/images/Pattern.svg'),
+    linear-gradient(rgb(112, 228, 193), rgb(67, 180, 146));
+  margin-top: 5pt;
+}
+
+.myflights-container .flights-card-container .card-date-menu-wrapper {
+  height: 20%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myflights-container .card-date-menu-wrapper .card-date {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.myflights-container .card-date .date-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.myflights-container .card-date .date-text {
+  font-size: 12pt;
+  color: #000;
+  opacity: 0.7;
+  line-height: 12pt;
+  margin-left: 2pt;
+  padding-top: 6px;
+}
+
+.myflights-container .card-date-menu-wrapper .card-menu {
+  display: flex;
+  height: 100%;
+  width: 100pt;
+  justify-content: flex-end;
+}
+
+.myflights-container .dropdown-wrapper-homepage {
+  position: relative;
+  display: flex;
+}
+
+.myflights-container .card-menu .menu-dropdown-homepage {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  margin-top: 5pt;
+  background-color: #f9f9f9;
+  max-height: 150pt;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  overflow: scroll;
+  border-radius: 10pt;
+  border-style: solid;
+  border-color: rgb(232, 233, 233);
+  border-width: 1pt;
+  width: 105pt;
+}
+
+.myflights-container .menu-dropdown-homepage .menu-dropdown-tile-homepage {
+  display: flex;
+  height: 27pt;
+  padding: 0pt 10pt;
+  border-bottom-style: solid;
+  border-bottom-width: 1pt;
+  border-bottom-color: rgb(232, 233, 233);
+}
+
+.myflights-container .menu-dropdown-tile-homepage .tile-image {
+  display: flex;
+}
+
+.myflights-container .menu-dropdown-tile-homepage .tile-text {
+  font-size: 10pt;
+  color: #000;
+  display: flex;
+  align-items: center;
+  line-height: 10pt;
+  margin-left: 5pt;
+  padding-top: 3pt;
+}
+
+.myflights-container .flights-card-container .from-flight-to-wrapper {
+  height: 40%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.myflights-container .from-flight-to-wrapper .from-to-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.myflights-container .from-to-container .from-text {
+  font-size: 8pt;
+  line-height: 8pt;
+  color: #000;
+  opacity: 0.7;
+}
+
+.myflights-container .from-to-container .flight-code-text {
+  text-transform: uppercase;
+  font-size: 20pt;
+  color: white;
+  font-weight: bold;
+  line-height: 20pt;
+}
+
+.myflights-container .from-to-container .time-text {
+  font-size: 12pt;
+  color: '#000';
+  opacity: 0.7;
+  line-height: 12pt;
+}
+
+.myflights-container .from-flight-to-wrapper .flight-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.myflights-container .flight-container .flight-icon-number {
+  display: flex;
+  height: 30%;
+  align-items: flex-end;
+}
+
+.myflights-container .flight-icon-number .flight-icon {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.myflights-container .flight-icon-number .flight-number {
+  font-size: 12pt;
+  color: #000;
+  opacity: 0.7;
+  margin-left: 5pt;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.myflights-container .flight-container .flight-image {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.myflights-container .flights-card-container .boarding-gate-wrapper {
+  height: 20%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myflights-container .boarding-gate-wrapper .boarding-gate-text {
+  font-size: 12pt;
+  color: #000;
+  opacity: 0.7;
+  line-height: 12pt;
+}
+.myflights-container .boarding-gate-wrapper .location-image {
+  padding-top: 2pt;
+  margin: 0pt 2pt;
+}
+
+.noflights-card-container .cardHeader-text {
+  color: #000;
+  font-size: 14pt;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.noflights-card-container .card-content {
+  color: #000;
+  font-size: 10pt;
+  text-transform: none;
+}
+
+.noflights-card-container .btn {
+  height: 35pt;
+  width: 80%;
+  border-radius: 18pt;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(71, 184, 150);
+  align-items: center;
+  justify-content: center;
+  line-height: 17pt;
+  text-decoration: none;
+}
+
+.noflights-card-container .btn .btn-text {
+  color: white;
+  font-weight: bold;
+  font-size: 10pt;
+  margin-left: 10px;
+  line-height: 18pt;
+}
+
+.homepage-container .myflights-container .add-button-container {
+  height: 15pt;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.homepage-container .add-button {
+  background-color: white;
+  height: 30pt;
+  width: 30pt;
+  border-radius: 15pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  box-shadow: 0px 5px 8px 0px rgb(0 0 0 / 10%);
+}
+
+.special-offers-container {
+  height: 155pt;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(250, 250, 250);
+  align-items: center;
+  padding: 15pt 0pt;
+}
+
+.homescreen-section-header-container {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5pt;
+}
+
+.homescreen-section-header-container .section-header {
+  font-size: 14pt;
+  font-weight: bold;
+  color: black;
+}
+
+.homescreen-section-header-container .section-header-viewText {
+  font-size: 14pt;
+  font-weight: bold;
+  color: rgb(71, 184, 150);
+  text-decoration: none;
+}
+
+.service-cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 95pt;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20pt 15pt;
+}
+
+.service-cards-wrapper .service-card-container {
+  height: 90pt;
+  width: 46pt;
+  background-color: white;
+}
+
+.service-cards-wrapper .service-card-container .service-card-image {
+  height: 55%;
+  width: 100%;
+  background-color: rgb(242, 255, 251);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5pt;
+}
+
+.service-cards-wrapper .service-card-container .service-card-text {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10pt;
+  font-size: bold;
+  text-align: center;
+  color: #000;
+}
+
+.trending-cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(250, 250, 250);
+  width: 100%;
+  height: 250pt;
+  padding-top: 10pt;
+}
+
+.trending-cards-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100%;
+  margin-top: 8pt;
+  overflow-y: hidden;
+}
+
+.trending-cards-wrapper .trending-cards-wrapper-horzScroll {
+  display: grid;
+  grid-gap: 0.2rem;
+  padding: 0 1.5rem;
+}
+
+.trending-cards-wrapper .trending-card-container {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 240pt;
+  width: 150pt;
+  margin-right: 10pt;
+}
+
+.trending-cards-wrapper .trending-card-container .card-image {
+  height: 60%;
+  width: 100%;
+  /* border-radius: 16pt; */
+}
+
+.trending-cards-wrapper .trending-card-container .card-sub-text {
+  font-size: 8pt;
+  color: #000;
+  font-weight: bold;
+  margin-top: 5pt;
+}
+
+.trending-cards-wrapper .trending-card-container .card-text {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-top: 5pt;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

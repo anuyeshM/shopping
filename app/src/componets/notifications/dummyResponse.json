@@ -1,0 +1,75 @@
+{
+    "status":200,
+    "data":[
+        {
+            "id":"1",
+            "icon":"",
+            "name":"Checklist",
+            "body":"For you upcoming flight AI 177, here is your checklist! To help you be all set for your journey.",
+            "dateandtime":"23/03/2020 13:15",
+            "details":false,
+            "read":false,
+            "expand":false
+        },
+        {
+            "id":"2",
+            "icon":"",
+            "name":"Connect",
+            "body":"Would you like to connect with out free Wi Fi, enjoy our servces and offers",
+            "dateandtime":"23/03/2020 13:15",
+            "details":false,
+            "read":false,
+            "expand":false
+        },
+        {
+            "id":"3",
+            "icon":"",
+            "name":"Checklist",
+            "body":"For you upcoming flight AI 177, here is your checklist! To help you be all set for your journey.",
+            "dateandtime":"23/03/2020 13:15",
+            "details":false,
+            "read":true,
+            "expand":false
+        },
+        {
+            "id":"4",
+            "icon":"",
+            "name":"Navigate",
+            "body":"Thank you for shopping with FabIndia! Don't forget to collect your order before boarding. Fly Safe!",
+            "dateandtime":"23/03/2020 13:15",
+            "details":true,
+            "read":true,
+            "expand":false
+        },
+        {
+            "id":"5",
+            "icon":"",
+            "name":"Checklist",
+            "body":"For you upcoming flight AI 177, here is your checklist! To help you be all set for your journey.",
+            "dateandtime":"23/03/2020 13:15",
+            "details":false,
+            "read":true,
+            "expand":false
+        },
+        {
+            "id":"6",
+            "icon":"",
+            "name":"My Itinerary",
+            "body":"Welcome to our Airport, here is your itinerary for journey today. Happy to have you!",
+            "dateandtime":"23/03/2020 13:15",
+            "details":false,
+            "read":false,
+            "expand":false
+        },
+        {
+            "id":"7",
+            "icon":"",
+            "name":"Checklist Again",
+            "body":"For you upcoming flight AI 177, here is your checklist! To help you be all set for your journey.",
+            "dateandtime":"23/03/2020 13:15",
+            "details":false,
+            "read":true,
+            "expand":false
+        }
+    ]
+}

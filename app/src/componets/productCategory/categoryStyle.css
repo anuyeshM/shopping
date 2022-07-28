@@ -1,0 +1,315 @@
+.gmcl .store-category-wrapper {
+}
+
+.gmcl .store-category {
+  width: 100vw;
+  text-align: center;
+}
+
+.gmcl .horz-scroll-offer {
+  display: grid;
+  grid-gap: 0;
+  padding: 0 1rem;
+  margin-left: -1rem;
+}
+
+.gmcl .horz-scroll-classification {
+  display: grid;
+  grid-template-columns: repeat(6, 5rem);
+  grid-gap: 10px;
+  padding: 0 1rem;
+}
+
+.gmcl .horz-scroll-classification a {
+  text-decoration: none !important;
+}
+
+.gmcl .horz-scroll-category {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 0 1rem;
+}
+
+.gmcl .store-category .offer-container {
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  overflow-x: auto;
+  width: 100vw;
+  height: 11rem;
+}
+
+.gmcl .store-category .search-input-wrapper {
+  width: calc(100% - 50px);
+}
+
+.gmcl .store-category .offer-container > * {
+  grid-column: 2 / -2;
+}
+
+.gmcl .store-category .classification-container {
+  padding: 0 0.5rem;
+  width: calc(100vw - 1rem);
+  margin: 0 auto 1rem auto;
+  display: grid;
+  overflow-x: auto;
+}
+
+.gmcl .store-category .category-container {
+  width: 100vw;
+}
+
+.gmcl .store-category .store-offer {
+  float: left;
+  margin: 0 1rem;
+}
+
+.gmcl .store-category .offer-image {
+  border-radius: 1rem;
+}
+
+.gmcl .store-category .store-classification {
+  height: 100%;
+}
+
+.gmcl .store-category .classification-image-wrapper {
+  position: relative;
+  height: 55px;
+}
+
+.gmcl .store-category .classification-image {
+  border-radius: 1rem;
+}
+
+.gmcl .store-category .store-classification-label {
+  width: 5rem;
+  height: calc(100% - 55px);
+  font-size: 12px;
+  font-weight: bold;
+  color: #797b7d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.gmcl .store-category .short-label {
+  line-height: 2rem;
+}
+
+.gmcl .store-category .product-category {
+  width: 100vw;
+  /* height: 19rem; */
+  padding: 1rem 0;
+  border-radius: 1rem;
+}
+
+.gmcl .store-category .product-category:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+.gmcl .store-category .product-category .category-header {
+  width: 100vw;
+  height: 2rem;
+  line-height: 2rem;
+}
+
+.gmcl .store-category .product-category .category-title {
+  float: left;
+  width: calc(70% - 1rem);
+  text-align: left;
+  padding-left: 1rem;
+  font-size: 18px;
+  font-weight: bold;
+  color: #202326;
+}
+
+.gmcl .store-category .product-category .view-all {
+  float: left;
+  width: calc(30% - 1rem);
+  text-align: right;
+  padding-right: 1rem;
+  font-size: 14px;
+  font-weight: bold;
+  color: #47b896;
+}
+
+.gmcl .store-category .product-category .category-content {
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  overflow-x: auto;
+  width: 100%;
+  /* height: 15rem; */
+  /* padding: 1rem 0 2rem 0; */
+}
+
+/*
+PRODUCT CARDS
+*/
+
+.gmcl .store-category .product-card {
+  position: relative;
+  margin: 0.5rem 1vw;
+  float: left;
+  border-radius: 1.2rem;
+  padding-top: 2%;
+}
+
+.gmcl .store-category .product-card .add-product {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  float: right;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+  right: 0;
+}
+
+.gmcl .store-category .product-card .add-product-img {
+  background-image: url("../../assets/images/open-details.svg");
+  background-size: 50px;
+}
+
+.gmcl .store-category .product-card .remove-product-img {
+  background-image: url("../../assets/images/open-details.svg");
+  background-size: 36px;
+}
+
+.gmcl .store-category .product-card .product-image-wrapper {
+  padding: 0.2rem 0 0 0;
+  height: 150px;
+}
+
+.gmcl .store-category .product-card .product-image {
+  border-radius: 1rem;
+  border: 1px solid #e8e9e9;
+  height: 140px;
+}
+
+.gmcl .store-category .product-card .product-info {
+  /* padding: 2px 10px; */
+  padding: 2px 0px 0px 0px;
+  /* height: 4rem; */
+}
+
+.gmcl .store-category .product-card .product-name {
+  height: 2.1rem;
+  color: #797b7d;
+  font-size: 12px;
+  text-align: left;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.gmcl .store-category .product-card .product-price-wrapper {
+  padding: 5px 0;
+  width: 100%;
+  /* height: 3rem; */
+  overflow: hidden;
+}
+
+.gmcl .store-category .product-card .product-price-solo {
+  line-height: 3rem !important;
+}
+
+.gmcl .store-category .product-card .product-price {
+  float: left;
+  /* width: 100%; */
+  /* width: 50%; */
+  height: 2rem;
+  line-height: 2rem;
+  color: #191c3a;
+  font-size: 11pt;
+  font-weight: bold;
+  text-align: left;
+}
+
+.gmcl .store-category .product-card .product-prep-time-solo {
+  line-height: 3rem !important;
+}
+
+.gmcl .store-category .product-card .product-prep-time {
+  float: left;
+  width: 50%;
+  height: 2rem;
+  line-height: 2rem;
+}
+
+.gmcl .store-category .product-card .product-prep-time-text {
+  font-size: 10pt;
+  text-align: right;
+  color: #3ab899;
+  font-weight: bold;
+}
+
+.gmcl .store-category .product-card .product-prep-time-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.gmcl .store-category .product-card .product-price-old {
+  float: left;
+  width: 50%;
+  height: 1rem;
+  line-height: 1rem;
+  color: #191c3a;
+  font-size: 10pt;
+  text-decoration: line-through;
+  text-align: left;
+}
+.gmcl .store-category .product-card .product-discount {
+  float: left;
+  width: 50%;
+  height: 1rem;
+  line-height: 1rem;
+  color: #df002e;
+  font-size: 9pt;
+  text-align: center;
+}
+
+/*
+MEDIA ORIENTATION
+*/
+
+@media (orientation: landscape) {
+  .gmcl .horz-scroll-category {
+    grid-template-columns: repeat(6, 12rem);
+  }
+  .gmcl .store-category .product-card .add-product {
+    margin-top: 8px;
+    margin-right: 20px;
+  }
+}
+
+@media (orientation: portrait) {
+  .gmcl .horz-scroll-category {
+    grid-template-columns: repeat(6, 11rem);
+  }
+  .gmcl .store-category .product-card .add-product {
+    margin-top: 8px;
+    margin-right: 15px;
+  }
+}
+/* AVAILABLE OFFERS STYLE */
+.gmcl .store-category .product-card .product-offers-container {
+  width: 90%;
+  border: 1px solid lightgray;
+  background-color: #fff;
+  align-items: center;
+  border-top-right-radius: 5pt;
+  border-bottom-right-radius: 5pt;
+  border-bottom-left-radius: 5pt;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.gmcl .store-category .product-card .product-offer-text {
+  color: #65c4a7;
+  font-size: 12px;
+}
+.gmcl .store-category .product-card .product-offer-title {
+  color: #e59732;
+}

@@ -1,0 +1,290 @@
+.md-modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 630px;
+  min-width: 320px;
+  height: auto;
+  z-index: 2000;
+  visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.md-content {
+  background-color: #fafafa;
+  border-top-left-radius: 30pt;
+  border-top-right-radius: 30pt;
+}
+
+.md-show {
+  visibility: visible;
+}
+
+.md-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  transition: all 0.3s;
+}
+
+.md-show ~ .md-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.md-perspective,
+.md-perspective body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.md-perspective body {
+  background: #222;
+  perspective: 600px;
+}
+
+/* Effect 3: Slide from the bottom */
+.md-effect-3 .md-content {
+  -webkit-transform: translateY(20%);
+  -moz-transform: translateY(20%);
+  -ms-transform: translateY(20%);
+  transform: translateY(20%);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-show.md-effect-3 .md-content {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.md-effect-2 .md-content {
+  -webkit-transform: translateX(20%);
+  -moz-transform: translateX(20%);
+  -ms-transform: translateX(20%);
+  transform: translateX(20%);
+  opacity: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  -moz-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+
+.md-show.md-effect-2 .md-content {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.md-modal .md-close-line-container {
+  height: 20pt;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.md-modal .md-content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.md-modal .md-close-line-container .md-close-line {
+  width: 40pt;
+  height: 3pt;
+  border-radius: 1.5pt;
+  background-color: #d7dee5;
+}
+
+.md-modal .md-header {
+  height: 30pt;
+  width: 95%;
+  display: flex;
+  align-items: center;
+}
+
+.md-modal .md-header .md-header-image {
+  height: 100%;
+  width: 35pt;
+  background-image: url('../../assets/images/arrowLeft.svg');
+  background-size: 22pt;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.md-modal .md-header .md-header-text {
+  font-weight: bold;
+  font-size: 14pt;
+  line-height: 14pt;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 2pt;
+}
+
+.md-modal .md-content .card-wrapper {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  height: 30pt;
+  margin: 10pt 0pt;
+}
+
+.md-modal .md-content .card-wrapper .cardNo-container {
+  display: flex;
+  flex: 1;
+  border: 1pt solid rgb(232, 233, 233);
+  height: 100%;
+  align-items: center;
+  border-radius: 18pt;
+  padding: 0pt 10pt;
+  letter-spacing: 1pt;
+}
+.md-modal .md-content .card-wrapper .cardNo-selected-wrapper {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.md-modal .md-content .card-wrapper .cvv-container {
+  display: flex;
+  width: 20%;
+  border: 1pt solid rgb(232, 233, 233);
+  height: 100%;
+  align-items: center;
+  border-radius: 18pt;
+  padding: 0pt 10pt;
+  font-size: 16px;
+}
+
+.md-modal .md-content .card-wrapper .cardNo-selected-container {
+  display: flex;
+  border: 1pt solid rgb(232, 233, 233);
+  height: 100%;
+  align-items: center;
+  border-radius: 18pt;
+  padding: 0pt 10pt;
+  width: 55%;
+}
+
+.md-modal .md-content .add-card-container {
+  height: 30pt;
+  margin: 5pt 0pt;
+  color: #47b896;
+  font-size: 12pt;
+  font-weight: bold;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.md-modal .md-content .payment-button {
+  width: 85%;
+  height: 35pt;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: white;
+  font-size: 14pt;
+  background-color: #47b896;
+  font-weight: bold;
+  border-radius: 18pt;
+  margin: 0pt 0pt 15px 0pt;
+}
+
+.md-modal .md-content .payment-button-disable {
+  width: 85%;
+  height: 35pt;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: white;
+  font-size: 14pt;
+  font-weight: bold;
+  border-radius: 18pt;
+  margin: 0pt 0pt 15px 0pt;
+  background-color: #e8e9e9;
+}
+
+.md-modal .md-sub-header-text {
+  width: 85%;
+  font-size: 14px;
+  color: rgb(15, 18, 47);
+  opacity: 0.6;
+  text-transform: none;
+}
+
+.md-modal .card-details-wrapper {
+  width: 85%;
+}
+
+.md-modal .card-details-wrapper .card-details-input-wrapper {
+  width: 100%;
+  margin: 10pt 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.md-modal .card-details-wrapper .input-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5pt 0;
+  width: 100%;
+}
+
+.md-modal .card-details-wrapper .input-text {
+  display: flex;
+  border: 1pt solid rgb(232, 233, 233);
+  align-items: center;
+  border-radius: 18pt;
+  padding: 0pt 10pt;
+  width: 90%;
+  height: 30pt;
+  color: rgb(32, 35, 38);
+  font-size: 16px;
+  letter-spacing: 0px;
+  text-transform: none;
+}
+
+.md-modal .card-details-wrapper .card-expiry-cvv-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.md-modal .md-content .card-details-payment-button {
+  width: 100%;
+  height: 35pt;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: white;
+  font-size: 14pt;
+  background-color: #47b896;
+  font-weight: bold;
+  border-radius: 18pt;
+  margin: 15pt 0;
+}
+
+.md-modal .save-card-wrapper {
+  display: flex;
+  align-items: center;
+}

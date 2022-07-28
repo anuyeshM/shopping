@@ -1,0 +1,64 @@
+.payment-fail {
+  width: 100vw;
+}
+
+.payment-fail-info {
+  text-align: center;
+}
+
+.payment-fail .payment-fail-icon {
+  height: 50vw;
+  width: 50vw;
+  margin: 3rem auto;
+  background-image: url("../../assets/images/payment-fail.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.payment-fail .payment-fail-title {
+  color: #202326;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: none !important;
+  text-align: center;
+}
+
+.payment-fail .payment-fail-description {
+  margin: 1rem auto;
+  width: 90%;
+  color: #797b7d;
+  text-transform: none !important;
+  text-align: center;
+}
+
+.payment-fail .payment-redirect {
+  border: none;
+  width: 10rem;
+  margin: 0 auto;
+  padding: 1rem;
+  background: #47b896;
+  color: #fff;
+  border-radius: 1rem;
+  letter-spacing: 2px;
+}
+
+.payment-fail .help {
+  position: fixed;
+  bottom: 2rem;
+  width: 90%;
+  margin: 0 5%;
+  font-size: 15px;
+}
+
+.payment-fail .help-text {
+  float: left;
+  width: 60%;
+  text-align: left;
+}
+
+.payment-fail .help-link {
+  float: left;
+  width: 40%;
+  text-align: right;
+  color: #47b896;
+}

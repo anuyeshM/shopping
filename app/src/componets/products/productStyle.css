@@ -1,0 +1,297 @@
+.gmcl .store-listing {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* height: calc(100vh - 60pt); */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/*
+PRODUCT LISTING
+START
+*/
+
+.gmcl .store-listing .page-title {
+  padding: 10px 1rem 0 1rem;
+  font-size: 18px;
+  font-weight: bold;
+  color: #202326;
+}
+
+.gmcl .store-listing .product-listing {
+  width: 100%;
+  /*margin-top: 4pt;*/
+  /* height: calc(100% - 1rem); */
+  /* overflow-y: scroll; */
+  /* background-color: #b8b9c2;*/
+}
+
+.gmcl .product-listing .product-card {
+  margin: 0.5rem 1vw;
+  float: left;
+  /* box-shadow: 0px 0px 5px 0px #ddd; */
+  border-radius: 1.2rem;
+  padding-bottom: 2%;
+  position: relative;
+  /* background-color: #ddd; */
+}
+
+.gmcl .product-listing .product-card .product-image-wrapper {
+  /* padding: 0 0.1rem 0 0; */
+  padding: 10px 5px;
+  /* background-color: #191c3a; */
+  height: 150px;
+}
+
+.gmcl .product-listing .product-card .product-image {
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e8e9e9;
+}
+
+.gmcl .product-listing .product-card .add-product {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  float: right;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.gmcl .product-listing .product-card .add-product-img {
+  background-image: url('../../assets/images/open-details.svg');
+  background-size: 50px;
+  margin-top: 8px;
+}
+
+.gmcl .product-listing .product-card .remove-product-img {
+  background-image: url('../../assets/images/open-details.svg');
+  background-size: 36px;
+}
+
+.gmcl .product-listing .product-card .product-info {
+  padding: 0px 6px;
+  height: 7.6rem;
+  /* background-color: #979; */
+}
+
+.gmcl .product-listing .product-card .product-name {
+  height: 2.1rem;
+  color: #797b7d;
+  font-size: 12px;
+  text-align: left;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.gmcl .product-listing .product-card .product-price-wrapper {
+  padding-top: 5pt;
+  width: 100%;
+  /* height: 3rem; */
+  overflow: hidden;
+}
+
+.gmcl .product-listing .product-card .product-price {
+  float: left;
+  /* width: 50%; */
+  /* width: 100%; */
+  height: 14pt;
+  line-height: 18pt;
+  color: rgb(14, 18, 49);
+  font-size: 11pt;
+  font-weight: bold;
+  text-align: left;
+}
+
+.gmcl .product-listing .product-card .product-prep-time {
+  float: left;
+  width: 50%;
+  height: 14pt;
+  line-height: 18pt;
+}
+
+.gmcl .product-listing .product-card .product-prep-time-text {
+  font-size: 10pt;
+  text-align: right;
+  color: #3ab899;
+  font-weight: bold;
+}
+
+.gmcl .product-listing .product-card .product-prep-time-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.gmcl .product-listing .product-card .product-price-old {
+  float: left;
+  width: 50%;
+  height: 18pt;
+  line-height: 18pt;
+  color: #191c3a;
+  font-size: 10pt;
+  text-decoration: line-through;
+  text-align: left;
+}
+.gmcl .product-listing .product-card .product-discount {
+  /* float: left; */
+  width: 100%;
+  height: 18pt;
+  line-height: 18pt;
+  color: #df002e;
+  font-size: 10pt;
+  text-align: center;
+}
+
+/*
+PRODUCT LISTING
+END
+*/
+
+/*
+MEDIA ORIENTATION
+*/
+
+.filter-searchBox {
+  /* background-color: #999; */
+  height: 45pt;
+  width: 100%;
+}
+
+.filter-searchBox-dropdown {
+  height: auto;
+}
+
+.store-listing .filter-searchBox .allFilters-container {
+  /* background-color: #828282; */
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.store-listing .filter-searchBox .filter-item-container {
+  height: 32pt;
+  /* padding: 5px 10px 5px 10px; */
+  /* background-color: #979; */
+  border: 1px solid rgb(232, 233, 233);
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 15pt;
+  font-size: 12pt;
+  /* line-height: 17pt; */
+  float: left;
+  color: #797b7d;
+}
+
+.store-listing .filter-searchBox .filter-item-icon-container-searchBox {
+  background-image: url('../../assets/images/crossRed.svg');
+  width: 25pt;
+  height: 100%;
+  background-size: 12pt;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 5pt;
+  margin-right: 5pt;
+}
+.store-listing
+  .filter-searchBox
+  .filter-item-container
+  .filter-item-container-text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 7pt;
+  justify-content: center;
+}
+.store-listing
+  .filter-searchBox
+  .allFilters-container
+  .showMore-button-container {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  /* background-color: #979; */
+  /* text-align: left; */
+  align-items: center;
+  margin-top: 5px;
+}
+.store-listing
+  .filter-searchBox
+  .allFilters-container
+  .showMore-button-container
+  .showMore-button {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #47b896;
+  font-weight: bold;
+}
+
+@media (orientation: landscape) {
+  .gmcl .store-listing {
+    padding: 1rem;
+    padding-top: 5rem;
+  }
+
+  .gmcl .product-listing .product-card {
+    width: 32vw;
+    max-width: 12rem;
+  }
+
+  .gmcl .product-listing .product-card .add-product {
+    margin-top: 15px;
+    right: 12px;
+  }
+}
+
+@media (orientation: portrait) {
+  .gmcl .store-listing {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .gmcl .product-listing .product-card {
+    width: calc(50vw - 15px);
+    max-width: 12rem;
+  }
+
+  .gmcl .product-listing .product-card .add-product {
+    margin-top: 15px;
+    right: 12px;
+  }
+}
+/* AVAILABLE OFFERS STYLES */
+.gmcl .product-listing .product-card .product-offers-container {
+  width: 100%;
+  margin-top: 5pt;
+  border: 1px solid lightgray;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 5pt;
+  border-bottom-right-radius: 5pt;
+  border-bottom-left-radius: 5pt;
+  padding: 2px 0px 0px 0px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.gmcl .product-listing .product-card .product-offer-text {
+  color: #65c4a7;
+  font-size: 12px;
+}
+.gmcl .product-listing .product-card .product-offer-title {
+  color: #e59732;
+}

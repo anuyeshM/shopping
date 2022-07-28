@@ -1,0 +1,49 @@
+.myOffers-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(250, 250, 250);
+  overflow: hidden;
+}
+
+.myOffers-container .myOffers-content {
+  display: flex;
+  /* background-color: #999; */
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 1rem; */
+}
+.myOffers-container .myOffers-content .myOffers-cards-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 15pt 0pt;
+}
+
+.myOffers-container .myOffers-content .offer-card-container {
+  height: 10rem;
+  width: 85%;
+  margin-top: 10pt;
+  border-radius: 16pt;
+}
+
+.myOffers-container .myOffers-cards-wrapper .banner-header {
+  /* background-color: antiquewhite; */
+  display: flex;
+  width: 85%;
+  color: #797b7d;
+  flex-direction: column;
+}
+
+.react-swipeable-view-container > div[aria-hidden='false'] {
+  height: 100%;
+}
+
+.react-swipeable-view-container > div[aria-hidden='true'] {
+  height: 0;
+}

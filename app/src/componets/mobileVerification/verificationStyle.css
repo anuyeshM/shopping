@@ -1,0 +1,255 @@
+.mv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+
+.mv .mv-disabled {
+  width: 100%;
+  height: calc(50% + 5rem);
+  background: none !important;
+}
+
+.mv .mv-container {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 2rem);
+  height: 15rem;
+  background-color: #fff;
+  opacity: 1;
+  border-radius: 2rem 2rem 0 0;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 0 0 999em rgb(0 0 0 / 20%);
+}
+
+.mv .mvs1 {
+}
+
+.mv .mvs2 {
+}
+
+.mv .phantom-white-space {
+  background: #fff;
+  height: 2rem;
+}
+
+.mv .info {
+  width: 100%;
+  height: 6rem;
+}
+
+.mv .info .info-title {
+  width: 100%;
+  height: 2rem;
+  color: #202326;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mv .info .info-desc {
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  color: #0e1231;
+  opacity: 0.7;
+  font-size: 15px;
+  text-align: left;
+  justify-content: center;
+  text-transform: none !important;
+}
+
+.mv .user-input {
+  width: 100%;
+  height: 5rem;
+}
+
+.mv .user-input .user-guide-text {
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  color: #35373a;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.mv .user-input .input-item {
+  height: calc(3rem - 2px);
+  line-height: 2.5rem;
+  text-align: center;
+  /*border: 1px solid #f0f0f0;*/
+  margin: 0 4px;
+}
+
+.mv .user-input .country-code-container {
+  width: calc(5rem - 10px);
+  border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.mv .user-input .country-code {
+  width: calc(100% - 20px);
+  height: calc(100% - 4px);
+  text-align: center;
+  margin: 2px auto 2px 15px;
+  font-size: 15px;
+  letter-spacing: 0.1rem;
+}
+
+.mv .user-input .mobile-number-container {
+  width: calc(100% - 5rem - 10px);
+  border-radius: 0 1.5rem 1.5rem 0;
+}
+
+.mv .user-input .otp-container {
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+.mv .user-input .mobile-number {
+  width: calc(100% - 2rem);
+  height: 35px;
+  border: none;
+  font-size: 15px;
+  letter-spacing: 0.2rem;
+  margin-top: 4px;
+}
+
+.mv .user-input .otp {
+  width: calc(100% - 2rem);
+  height: 35px;
+  border: none;
+  font-size: 15px;
+  letter-spacing: 0.2rem;
+  margin-top: 4px;
+}
+
+.mv .user-input .resend-container {
+  width: 100%;
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+.mv .user-input .resend-static {
+  float: left;
+  width: calc(70% - 2rem);
+  height: 2rem;
+  line-height: 2rem;
+  color: #9d9fab;
+  font-size: 13px;
+  font-weight: bold;
+  padding-left: 2rem;
+}
+
+.mv .user-input .resend-action {
+  float: left;
+  width: 30%;
+  height: 2rem;
+  line-height: 2rem;
+  color: #47b896;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 1rem;
+  background-color: #fefefe;
+  text-align: center;
+}
+
+.mv input:focus {
+  outline: none;
+}
+
+.mv .action {
+  width: 100%;
+  height: calc(100% - 11rem);
+}
+
+.mv .action .action-button {
+  float: left;
+  width: calc(50% - 1rem);
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  vertical-align: middle;
+  margin: 1.5rem 0.5rem;
+  border: none;
+  border-radius: 2rem;
+  font-weight: bold;
+}
+
+.mv .action .cancel-validation {
+  background-color: #fafafa;
+  color: #535558;
+}
+
+.mv .action .send-otp {
+  background-color: #47b896;
+  color: #fff;
+}
+
+.mv .action .send-otp-disabled {
+  background-color: #ddd;
+  color: #fff;
+}
+
+/*
+OVERRIDES
+*/
+
+.react-tel-input .flag-dropdown {
+  width: 5rem !important;
+  height: 3rem !important;
+  line-height: 3rem !important;
+  border-radius: 1rem 0 0 1rem !important;
+  background: #fff !important;
+  padding: 0 0 0 1.2rem !important;
+}
+
+.react-tel-input .flag-dropdown .country-code {
+  float: left;
+  width: calc(2rem - 10px);
+  line-height: 3rem;
+  text-align: right;
+  margin-left: 10px;
+}
+
+.react-tel-input .form-control {
+  width: calc(100% - 6rem) !important;
+  height: 3rem !important;
+  line-height: 3rem !important;
+  padding: 0 1rem !important;
+  margin-left: 6rem !important;
+  border-radius: 0 1rem 1rem 0 !important;
+  font-size: 15px;
+  letter-spacing: 0.1rem;
+}
+
+.react-tel-input .country-list {
+  border-radius: 1rem !important;
+  margin-top: -6rem !important;
+  box-shadow: 0 0 2rem 0.5rem rgba(0, 0, 0, 0.35) !important;
+}
+
+.mv .mvs2 .info {
+  height: 5rem !important;
+}
+
+.mv .otp-container > div div {
+  width: 25%;
+}
+
+.mv .otp-container input {
+  width: 3em !important;
+  height: 3rem !important;
+  margin: 0 auto !important;
+  border: 1px solid #e8e9e9 !important;
+  border-radius: 1rem !important;
+  color: #797b7b !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+
+.mv .otp-container span {
+  width: 3rem !important;
+}

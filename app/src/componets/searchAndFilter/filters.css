@@ -1,0 +1,20 @@
+.filterIcon-container {
+  width: 35pt;
+  height: calc(40pt - 1px);
+  margin-top: -1px;
+  background-color: #47b896;
+  border-bottom-right-radius: 18pt;
+  border-top-right-radius: 18pt;
+  background-image: url('../../assets/images/filter.svg');
+  background-repeat: no-repeat;
+  background-position: 8pt;
+  background-size: 18pt;
+}
+
+.store-filter-modal-header-text {
+  font-weight: bold;
+  font-size: 18pt;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+}

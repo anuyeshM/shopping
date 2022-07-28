@@ -1,0 +1,28 @@
+{
+    "status":200,
+    "data":{
+        "currency":"Rs",
+        "amount":1890.00,
+        "loyaltyPoints": 300,
+        "discountedLoyalty":1590.00,
+        "totalLoyalty":6250,
+        "paymentOptions":[
+            {
+                "name":"Debit or Credit Card",
+                "active":true
+            },
+            {
+                "name":"Digital Wallet",
+                "active":true
+            },
+            {
+                "name":"Net Banking",
+                "active":true
+            },
+            {
+                "name":"Cash",
+                "active":false
+            }
+        ]
+    }
+}

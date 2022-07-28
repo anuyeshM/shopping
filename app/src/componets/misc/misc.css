@@ -1,0 +1,67 @@
+.not-found {
+  padding: 4rem;
+  text-align: center;
+}
+
+.not-found-icon {
+  height: 50vw;
+  width: 50vw;
+  margin: 3rem auto;
+  background-image: url("../../assets/images/payment-fail.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.s2a-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 2rem 2rem 0 0;
+  box-shadow: 0 0 0 999em rgba(0, 0, 0, 0.3);
+  z-index: 60;
+}
+
+.s2a-container .s2a-header {
+}
+
+.s2a-container .s2a-icon {
+  margin: 2rem auto;
+  width: 80%;
+  height: 5rem;
+  background-image: url("../../assets/images/app-logo.png");
+  background-size: 18rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.s2a-container .s2a-text {
+}
+
+.s2a-container .s2a-content {
+  margin: 0 auto;
+}
+
+.s2a-container .option {
+  margin: 2rem auto;
+  width: 80%;
+  height: 3rem;
+  line-height: 3rem;
+  border: none;
+  border-radius: 2rem;
+  font-weight: bold;
+}
+
+.s2a-container .option-web {
+  background-color: #fafafa;
+  color: #535558;
+}
+
+.s2a-container .option-app {
+  background-color: #47b896;
+  color: #fff;
+}

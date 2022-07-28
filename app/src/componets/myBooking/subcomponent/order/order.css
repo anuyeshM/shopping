@@ -1,0 +1,27 @@
+.order-wrapper {
+  width: 90%;
+}
+
+.order-wrapper .card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-wrapper .flight-detail {
+  background-color: #e1faf2;
+  padding: 3pt;
+  margin: 5pt 0pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-wrapper .others-text {
+  background-color: #e1faf2;
+  padding: 3pt;
+  margin: 5pt 0pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
