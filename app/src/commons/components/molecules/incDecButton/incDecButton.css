@@ -1,0 +1,9 @@
+.inc-dec-button {
+  height: 36pt;
+  width: 25pt;
+  padding: 0pt 5pt;
+  border: 1pt solid var(--border-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

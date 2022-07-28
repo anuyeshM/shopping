@@ -1,0 +1,9 @@
+.primaryButton {
+  height: 36pt;
+  color: white;
+  background-color: var(--primary-color);
+  width: 100%;
+  border-radius: 12pt;
+  box-shadow: none;
+  border: 0;
+}

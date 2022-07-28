@@ -1,0 +1,8 @@
+.flight-band {
+  background-color: var(--primary-shade1);
+  padding: 0pt 3pt;
+  display: flex;
+  height: 30pt;
+  align-items: center;
+  justify-content: center;
+}

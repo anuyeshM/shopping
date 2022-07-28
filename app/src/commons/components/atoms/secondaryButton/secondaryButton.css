@@ -1,0 +1,9 @@
+.secondaryButton {
+  height: 36pt;
+  background-color: var(--bg-white);
+  border: 1pt solid var(--border-primary);
+  color: var(--primary-shade2);
+  width: 100%;
+  border-radius: 12pt;
+  box-shadow: none;
+}

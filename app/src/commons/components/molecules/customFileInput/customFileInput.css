@@ -1,0 +1,28 @@
+.inputContainer .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputContainer .inputfile + label {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  padding: 5pt 10pt;
+  padding-top: 7pt;
+  display: inline-block;
+  background-color: var(--primary-color);
+  border-radius: 5pt;
+}
+
+/* .inputContainer .inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: red;
+} */
+
+.inputContainer .inputfile + label {
+  cursor: pointer; /* "hand" cursor */
+}

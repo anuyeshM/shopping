@@ -1,0 +1,139 @@
+/* parent rendering body */
+.gmcl {
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+
+.gmcl a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.gmcl .content {
+  width: 100vw;
+  margin: 0;
+  padding: 58pt 0 0 0;
+  overflow: hidden;
+}
+
+.gmcl .webview-content {
+  width: 100vw;
+  margin: 0;
+  overflow: hidden;
+}
+
+.gmcl .cart-container {
+  text-align: center;
+}
+
+::placeholder {
+  color: #ddd;
+  font-weight: normal;
+  line-height: 15px;
+}
+
+.store-category .offer-container img:before {
+  position: relative;
+}
+
+.store-image-container img:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  height: 120px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 18pt;
+  background-position: center;
+  background-size: 120px;
+  background-repeat: no-repeat;
+  background-position-y: 10px;
+  background-image: url('../../assets/images/broken-link.png');
+  background-image: url('../../assets/images/broken-link.png'),
+    linear-gradient(#fafafa, #fff);
+}
+
+.store-category img:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  height: 140px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-position: center;
+  background-size: 150px 140px;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/broken-link.png');
+  background-image: url('../../assets/images/broken-link.png'),
+    linear-gradient(#fafafa, #fff);
+}
+
+.store-category .classification-container img:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-position: center;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/broken-link.png');
+  background-image: url('../../assets/images/broken-link.png'),
+    linear-gradient(#fafafa, #fff);
+}
+
+.store-listing img:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  height: 140px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-position: center;
+  background-size: 150px 140px;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/broken-link.png');
+  background-image: url('../../assets/images/broken-link.png'),
+    linear-gradient(#fafafa, #fff);
+}
+
+.product-details img:before {
+  content: ' ';
+  display: block;
+  position: relative;
+  height: 270px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 25px;
+  background-position: center;
+  background-size: 290px;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/broken-link.png');
+  background-image: url('../../assets/images/broken-link.png'),
+    linear-gradient(#fafafa, #fff);
+}
+
+.cart img:before {
+  margin: 0.26rem 0;
+  content: ' ';
+  display: block;
+  position: absolute;
+  height: 90%;
+  width: 80px;
+  left: 0px;
+  top: 0;
+  border-radius: 1rem;
+  background-position: center;
+  background-size: 72px;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/broken-link.png');
+  background-image: url('../../assets/images/broken-link.png'),
+    linear-gradient(#fafafa, #fff);
+}
